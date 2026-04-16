@@ -1,0 +1,40 @@
+<div class="app-container" [ngClass]="{'light-theme': !isDarkTheme}">
+  <div class="sidebar">
+    
+    <div class="header-row">
+      <h2>Mesh Console</h2>
+      <button class="theme-btn" (click)="toggleTheme()" title="Toggle Theme">
+        {{ isDarkTheme ? '☀️' : '🌙' }}
+      </button>
+    </div>
+
+    <button class="new-chat-btn" (click)="chatService.startNewSession()">+ New Clinical Session</button>
+    
+    <ul id="sessionList">
+      <li *ngFor="let session of chatService.sessions | async" 
+          [class.active-session]="session.id === (chatService.activeSessionId | async)"
+          (click)="chatService.switchSession(session.id)">
+        <span class="session-title">{{ session.title }}</span>
+        <button class="delete-btn" (click)="chatService.deleteSession(session.id, $event)">🗑️</button>
+      </li>
+    </ul>
+    <p class="status-text">Zero-Trust Mode: Active</p>
+  </div>
+
+  <div class="main-content">
+    <div #chatBox class="chat-container">
+      <div *ngFor="let msg of chatService.currentChat | async" class="message" [ngClass]="msg.role === 'user' ? 'user-msg' : 'ai-msg'">
+        <div *ngIf="msg.fileName" class="file-badge">📎 {{ msg.fileName }}</div>
+        <div [innerText]="msg.content"></div>
+      </div>
+      <div *ngIf="chatService.isLoading | async" class="message ai-msg loading-msg">Consulting the mesh...</div>
+    </div>
+    
+    <div class="input-wrapper">
+      <input type="file" id="file-input" accept="image/*,.pdf,.txt" (change)="onFileSelected($event)">
+      <button class="file-btn" onclick="document.getElementById('file-input').click()">📎</button>
+      <textarea [(ngModel)]="userInput" placeholder="Message the Clinical Mesh..." rows="1" (keydown)="handleEnter($event)" [disabled]="(chatService.isLoading | async) ?? false"></textarea>
+      <button class="send-btn" (click)="send()" [disabled]="(chatService.isLoading | async) ?? false">↑</button>
+    </div>
+  </div>
+</div>

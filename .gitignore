@@ -1,0 +1,13 @@
+# Node & Angular
+node_modules/
+dist/
+.angular/
+
+# Python
+__pycache__/
+*.pyc
+
+# Security
+.env
+key.pem
+secrets.yaml
