@@ -19,10 +19,8 @@ export class ChatService {
     this.loadSessionsFromStorage(); 
   }
 
-  // chat history
   private loadSessionsFromStorage() {
     const saved = localStorage.getItem('mesh_sessions');
-    
     if (saved && saved !== '[]') {
       const parsed = JSON.parse(saved);
       this.sessions.next(parsed);
@@ -31,11 +29,9 @@ export class ChatService {
         return; 
       }
     }
-    
     this.startNewSession();
   }
 
- 
   private generateUUID() {
     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
       var r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
@@ -43,13 +39,10 @@ export class ChatService {
     });
   }
 
+  // --- THE FIX: Ghost Sessions ---
+  // Notice we no longer push to this.sessions or localStorage here!
   startNewSession() {
     const newId = this.generateUUID();
-    const newSession = { id: newId, title: 'New Clinical Session' };
-    
-    this.sessions.next([newSession, ...this.sessions.value]);
-    localStorage.setItem('mesh_sessions', JSON.stringify(this.sessions.value));
-    
     this.activeSessionId.next(newId);
     this.currentChat.next([{ role: 'ai', content: 'Hello, Doctor. How can the mesh assist you today?' }]);
   }
@@ -89,16 +82,16 @@ export class ChatService {
 
   async sendMessage(prompt: string, file?: File) {
     const sessionId = this.activeSessionId.value;
-    if (!sessionId) {
-        console.error("Critical Error: Tried to send message without an active session!");
-        return; 
-    }
+    if (!sessionId) return; 
 
-    const activeSess = this.sessions.value.find(s => s.id === sessionId);
-    if (activeSess && activeSess.title === 'New Clinical Session') {
-      activeSess.title = prompt.substring(0, 25) + (prompt.length > 25 ? '...' : '');
+    // --- THE FIX: Lazy Saving ---
+    // If the session doesn't exist in our list yet, create it NOW.
+    const existingSession = this.sessions.value.find(s => s.id === sessionId);
+    if (!existingSession) {
+      const newTitle = prompt.substring(0, 25) + (prompt.length > 25 ? '...' : '');
+      const newSession = { id: sessionId, title: newTitle };
+      this.sessions.next([newSession, ...this.sessions.value]);
       localStorage.setItem('mesh_sessions', JSON.stringify(this.sessions.value));
-      this.sessions.next(this.sessions.value);
     }
 
     this.currentChat.next([...this.currentChat.value, { role: 'user', content: prompt, fileName: file?.name }]);
@@ -111,34 +104,21 @@ export class ChatService {
 
     try {
       const res: any = await firstValueFrom(this.http.post(`${this.apiUrl}/process`, formData));
-      
-     
-      if (res.error) {
-        throw new Error(res.error);
-      }
-      
+      if (res.error) throw new Error(res.error);
       this.currentChat.next([...this.currentChat.value, { role: 'ai', content: res.natural_response }]);
     } catch (err: any) {
       console.error("RAW ERROR CAUGHT:", err);
       let errorMsg = "An unexpected error occurred.";
-      
-      // get error
-      if (err.error && err.error.error) {
-        errorMsg = err.error.error;
-      } else if (err.error && typeof err.error === 'string') {
-        errorMsg = `Server Error: ${err.error.substring(0, 50)}...`;
-      } else if (err.message) {
-        errorMsg = err.message;
-      }
+      if (err.error && err.error.error) errorMsg = err.error.error;
+      else if (err.error && typeof err.error === 'string') errorMsg = `Server Error: ${err.error.substring(0, 50)}...`;
+      else if (err.message) errorMsg = err.message;
 
-      // error handling with proper message
       const lowerError = errorMsg.toLowerCase();
-      if (lowerError.includes("429") || lowerError.includes("exhausted") || lowerError.includes("quota") || err.status === 500 || err.status === 502 || err.status === 504) {
-         errorMsg = "The mesh is currently experiencing maximum capacity due to high traffic. Please wait 60 seconds for the queue to clear before submitting your next note.";
+      if (lowerError.includes("429") || lowerError.includes("exhausted") || lowerError.includes("quota") || err.status === 500 || err.status === 502 || err.status === 503 || err.status === 504) {
+         errorMsg = "The mesh is currently experiencing maximum capacity due to high traffic. Please wait 60 seconds.";
       } else {
          errorMsg = `System Error: ${errorMsg}`;
       }
-
       this.currentChat.next([...this.currentChat.value, { role: 'ai', content: errorMsg }]);
     } finally {
       this.isLoading.next(false);
