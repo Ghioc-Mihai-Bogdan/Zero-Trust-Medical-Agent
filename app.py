@@ -15,9 +15,9 @@ except Exception as e:
 
 def ask_gemma_local(prompt, system_instruction):
     url = "http://10.42.0.1:11434/api/generate"
-    payload = {"model": "gemma2:2b", "prompt": prompt, "system": system_instruction, "stream": False}
+    payload = {"model": "gemma4:e4b", "prompt": prompt, "system": system_instruction, "stream": False}
     try:
-        res = requests.post(url, json=payload, timeout=60)
+        res = requests.post(url, json=payload, timeout=300)
         return res.json().get('response', '')
     except Exception as e:
         return f"[Local AI Error: {str(e)}]"
@@ -30,7 +30,7 @@ def safe_agent_call(url, payload, fallback_key):
         
         for u in try_urls:
             try:
-                response = requests.post(u, json=payload, timeout=60)
+                response = requests.post(u, json=payload, timeout=300)
                 if response.ok:
                     return response.json()
                 last_error = f"HTTP {response.status_code}"

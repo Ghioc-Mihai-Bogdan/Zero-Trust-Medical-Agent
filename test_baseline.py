@@ -32,7 +32,7 @@ for row in tqdm(dataset, desc="Evaluating"):
     }
     
     try:
-        response = requests.post(API_URL, data=payload, timeout=120)
+        response = requests.post(API_URL, data=payload, timeout=300)
         result_text = response.json().get('natural_response', '').lower()
         
         if true_diagnosis in result_text:
