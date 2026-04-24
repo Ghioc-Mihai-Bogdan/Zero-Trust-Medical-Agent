@@ -3,19 +3,15 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-def ask_gemma(prompt, system_instruction):
-    url = "http://10.42.0.1:11434/api/generate"
-    payload = {"model": "gemma4:e4b", "prompt": prompt, "system": system_instruction, "stream": False}
-    try:
-        return requests.post(url, json=payload, timeout=300).json().get('response', '')
-    except Exception as e:
-        return f"[Ollama Error: {str(e)}]"
-
 @app.route('/analyze', methods=['POST'])
 def analyze():
     try:
         data = request.get_json(force=True, silent=True) or {}
-        return jsonify({"acuity_level": ask_gemma(f"Estimate ESI 1-5 based on:\n{data.get('text', '')}", "You are a Triage Nurse AI.")})
+        url = "http://10.42.0.1:11434/api/generate"
+        prompt_text = f"Based on this history, what is the Emergency Severity Index (ESI 1-5)? Give exactly one ESI level and a 1-sentence reason.\nHistory:\n{data.get('text', '')}"
+        payload = {"model": "gemma4:e4b", "prompt": prompt_text, "system": "You are a precise Triage Nurse AI.", "stream": False}
+        res = requests.post(url, json=payload, timeout=300).json().get('response', '')
+        return jsonify({"acuity_level": res})
     except Exception as e:
         return jsonify({"acuity_level": f"[Crash: {str(e)}]"})
 

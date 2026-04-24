@@ -1,0 +1,24 @@
+==================================================
+ 📊 BASELINE EVALUATION REPORT (Pre-Fine-Tuning)
+==================================================
+Model: Gemma 4:e4b (Zero-Shot Unit Test)
+Cases Evaluated: 85
+Successful Diagnoses: 40
+Missed Diagnoses: 45
+Accuracy Rate: 47.06%
+
+❌ TOP 3 FAILED CASES FOR REVIEW:
+
+[1] Symptoms: I've been having chest pain, dizziness, and a headache that feels like it's in a narrow zone around ...
+   Expected: HYPERTENSION
+   AI Output: 1. acute coronary syndrome (acs) / myocardial infarction (mi)
+2. trigeminal neuralgia or cluster headache
+3. severe migraine with vasospasm or aura...
+
+[2] Symptoms: I've been feeling really tired and sick. I've had a bad cough and sore throat. I've been shivering a...
+   Expected: COMMON COLD
+   AI Output: 1. influenza (influenza): high probability given the sudden onset, systemic symptoms (fever, shivering, profound fatigue), and respiratory involvement...
+
+[3] Symptoms: I've been experiencing neck pain, balance issues, and dizziness....
+   Expected: CERVICAL SPONDYLOSIS
+   AI Output: 1. **cervicogenic vertigo/neuralgia:** dysfunction of the cervical spine (neck vertebrae) can irritate structures or nerves that contribute to balance...

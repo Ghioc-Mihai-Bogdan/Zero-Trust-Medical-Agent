@@ -5,7 +5,7 @@ from datasets import load_dataset
 from tqdm import tqdm
 
 DATASET_NAME = "gretelai/symptom_to_diagnosis"
-API_URL = "http://62.3.175.146/api/process"
+API_URL = "http://127.0.0.1:8088/diagnose"
 
 print(f"Loading dataset: {DATASET_NAME}...")
 dataset = load_dataset(DATASET_NAME, split="train")
@@ -19,21 +19,23 @@ dataset = dataset.shuffle(seed=42).select(range(sample_size))
 correct_diagnoses = 0
 failed_cases = []
 
-print("\nStarting automated baseline test against Gemma 2B Swarm...\n")
+print("\nStarting automated baseline test against Diagnostician (Gemma 4:e4b)...\n")
 
 for row in tqdm(dataset, desc="Evaluating"):
     symptoms = row['input_text']
     true_diagnosis = row['output_text'].lower()
     
+    # 1. Update payload specifically for the Diagnostician agent
     payload = {
-        "session_id": "automated-test-session",
-        "prompt": f"Patient presents with: {symptoms}",
-        "doctor_name": "Dr. Validation"
+        "text": symptoms
     }
     
     try:
-        response = requests.post(API_URL, data=payload, timeout=300)
-        result_text = response.json().get('natural_response', '').lower()
+        # 2. Use json=payload to ensure correct header parsing, lowered timeout to 120s
+        response = requests.post(API_URL, json=payload, timeout=120)
+        
+        # 3. Extract the 'diagnoses' key returned by the agent
+        result_text = response.json().get('diagnoses', '').lower()
         
         if true_diagnosis in result_text:
             correct_diagnoses += 1
@@ -55,7 +57,7 @@ accuracy = (correct_diagnoses / sample_size) * 100
 print("\n" + "="*50)
 print(" 📊 BASELINE EVALUATION REPORT (Pre-Fine-Tuning)")
 print("="*50)
-print(f"Model: Gemma 2:2B (Zero-Shot)")
+print(f"Model: Gemma 4:e4b (Zero-Shot Unit Test)")
 print(f"Cases Evaluated: {sample_size}")
 print(f"Successful Diagnoses: {correct_diagnoses}")
 print(f"Missed Diagnoses: {len(failed_cases)}")
