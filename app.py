@@ -8,6 +8,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
+# Initialize Redis
 try:
     redis_client = redis.Redis(host='redis-service', port=6379, db=0, decode_responses=True)
 except:
@@ -37,6 +38,10 @@ def safe_agent_call(url, payload, fallback_key):
     except Exception as e:
         return {fallback_key: f"[Connection failed: {str(e)}]"}
 
+@app.route('/health', methods=['GET'])
+def health_check():
+    return jsonify({"status": "Orchestrator is online"}), 200
+
 @app.route('/api/history', methods=['GET'])
 def get_history():
     session_id = request.args.get('session_id')
@@ -49,11 +54,23 @@ def get_history():
 
 @app.route('/api/process', methods=['POST'])
 def process():
-    session_id = request.form.get('session_id', 'test-session')
-    user_text = request.form.get('prompt', '')
+    # --- FIX 1: Safely handle both Angular's FormData and standard JSON ---
+    if request.is_json or 'application/json' in request.headers.get('Content-Type', ''):
+        try:
+            data = request.get_json(force=True)
+        except Exception as e:
+            return jsonify({"error": f"Failed to parse JSON: {str(e)}"}), 400
+    else:
+        # Fallback to reading FormData (What Angular sends via chat.service.ts)
+        data = request.form
+
+    session_id = data.get('session_id', 'test-session')
+    user_text = data.get('prompt', '')
+
+    if not user_text:
+        return jsonify({"error": "No prompt was provided."}), 400
 
     # --- AI NAMED ENTITY EXTRACTION ---
-    # We ask Gemma to figure out your name contextually
     name_prompt = f"Extract the doctor's name from this text. Format it as 'Dr. [Name]'. If no doctor is mentioned, reply EXACTLY with 'Dr. Validation'. Reply ONLY with the name and no other text.\n\nText: '{user_text}'"
     doctor_name = ask_gemma_local(name_prompt, "You are a strict data extraction bot.").strip()
     
@@ -121,9 +138,11 @@ def process():
             try: redis_client.set(f"session:{session_id}", json.dumps(history), ex=86400) 
             except: pass
 
+        # --- FIX 2: Return 'natural_response' as Angular expects it ---
         return jsonify({"natural_response": ai_text})
         
     except Exception as e:
+        # --- FIX 3: Return 'error' so Angular's catch block can read res.error ---
         return jsonify({"error": f"API failed: {str(e)}"}), 500
 
 if __name__ == '__main__':

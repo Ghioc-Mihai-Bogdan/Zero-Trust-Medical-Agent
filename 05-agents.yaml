@@ -1,0 +1,146 @@
+# ==========================================
+# 1. Diagnostician
+# ==========================================
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: diagnostician
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: diagnostician
+  template:
+    metadata:
+      labels:
+        app: diagnostician
+    spec:
+      containers:
+      - name: diagnostician
+        image: local/diagnostician:v1
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: diagnostician
+spec:
+  selector:
+    app: diagnostician
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
+
+# ==========================================
+# 2. Medical Coder
+# ==========================================
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: medical-coder
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: medical-coder
+  template:
+    metadata:
+      labels:
+        app: medical-coder
+    spec:
+      containers:
+      - name: medical-coder
+        image: local/medical-coder:v1
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: medical-coder
+spec:
+  selector:
+    app: medical-coder
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
+
+# ==========================================
+# 3. Acuity Analyzer
+# ==========================================
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: acuity-analyzer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: acuity-analyzer
+  template:
+    metadata:
+      labels:
+        app: acuity-analyzer
+    spec:
+      containers:
+      - name: acuity-analyzer
+        image: local/acuity-analyzer:v1
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: acuity-analyzer
+spec:
+  selector:
+    app: acuity-analyzer
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
+
+# ==========================================
+# 4. Patient Educator
+# ==========================================
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: patient-educator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: patient-educator
+  template:
+    metadata:
+      labels:
+        app: patient-educator
+    spec:
+      containers:
+      - name: patient-educator
+        image: local/patient-educator:v1
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: patient-educator
+spec:
+  selector:
+    app: patient-educator
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
