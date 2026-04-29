@@ -19,7 +19,7 @@ dataset = dataset.shuffle(seed=42).select(range(sample_size))
 correct_diagnoses = 0
 failed_cases = []
 
-print("\nStarting automated baseline test against Diagnostician (Gemma 4:e4b)...\n")
+print("\nStarting automated baseline test against Diagnostician (Gemma 4:31b)...\n")
 
 for row in tqdm(dataset, desc="Evaluating"):
     symptoms = row['input_text']
@@ -57,7 +57,7 @@ accuracy = (correct_diagnoses / sample_size) * 100
 print("\n" + "="*50)
 print(" 📊 BASELINE EVALUATION REPORT (Pre-Fine-Tuning)")
 print("="*50)
-print(f"Model: Gemma 4:e4b (Zero-Shot Unit Test)")
+print(f"Model: Gemma 4:31b (Zero-Shot Unit Test)")
 print(f"Cases Evaluated: {sample_size}")
 print(f"Successful Diagnoses: {correct_diagnoses}")
 print(f"Missed Diagnoses: {len(failed_cases)}")

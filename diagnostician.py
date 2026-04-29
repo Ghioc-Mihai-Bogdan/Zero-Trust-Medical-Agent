@@ -9,10 +9,14 @@ def diagnose():
         data = request.get_json(force=True, silent=True) or {}
         url = "http://10.42.0.1:11434/api/generate"
         payload = {
-            "model": "gemma4:e4b", 
+            "model": "gemma4:31b", 
             "prompt": f"Symptoms: {data.get('text', '')}\n\nList top 3 differential diagnoses.", 
             "system": "You are a strict diagnostic machine. Output exactly 3 diagnoses.", 
-            "stream": False
+            "stream": False,
+            "options": {
+            "num_gpu": 99,
+            "num_ctx": 8192
+            }
         }
         res = requests.post(url, json=payload, timeout=300).json().get('response', '')
         return jsonify({"diagnoses": res})

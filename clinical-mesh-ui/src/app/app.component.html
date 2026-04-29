@@ -30,11 +30,21 @@
       <div *ngIf="chatService.isLoading | async" class="message ai-msg loading-msg">Consulting the mesh...</div>
     </div>
     
-    <div class="input-wrapper">
-      <input type="file" id="file-input" accept="image/*,.pdf,.txt" (change)="onFileSelected($event)">
-      <button class="file-btn" onclick="document.getElementById('file-input').click()">📎</button>
-      <textarea [(ngModel)]="userInput" placeholder="Message the Clinical Mesh..." rows="1" (keydown)="handleEnter($event)" [disabled]="(chatService.isLoading | async) ?? false"></textarea>
-      <button class="send-btn" (click)="send()" [disabled]="(chatService.isLoading | async) ?? false">↑</button>
+    <div class="input-wrapper" style="flex-direction: column; align-items: flex-start; padding: 15px;">
+      <input type="file" id="file-input" accept=".txt,.pdf,image/*" (change)="onFileSelected($event)" style="display: none;">
+      
+      <div *ngIf="selectedFile" class="staged-file-badge" style="background: #2a2a35; color: #fff; padding: 6px 12px; border-radius: 6px; margin-bottom: 10px; display: inline-flex; align-items: center; font-size: 0.85rem; border: 1px solid #444;">
+        📎 {{ selectedFile.name }}
+        <button (click)="removeFile()" style="background: none; border: none; color: #ff6b6b; cursor: pointer; margin-left: 10px; font-weight: bold;">✕</button>
+      </div>
+
+      <div style="display: flex; gap: 10px; align-items: center; width: 100%;">
+        <button class="file-btn" onclick="document.getElementById('file-input').click()" style="flex-shrink: 0;">📎</button>
+        <textarea [(ngModel)]="userInput" placeholder="Message the Clinical Mesh..." rows="1" (keydown)="handleEnter($event)" [disabled]="(chatService.isLoading | async) ?? false" style="flex-grow: 1; resize: none;"></textarea>
+        
+        <button *ngIf="!(chatService.isLoading | async)" class="send-btn" (click)="send()" style="flex-shrink: 0;">↑</button>
+        <button *ngIf="(chatService.isLoading | async)" (click)="chatService.stopGeneration()" style="flex-shrink: 0; background: #ff4757; color: white; border: none; padding: 10px 15px; border-radius: 8px; cursor: pointer; font-weight: bold;">⏹</button>
+      </div>
     </div>
   </div>
 </div>

@@ -1,7 +1,24 @@
+/* ==========================================================================
+   GLOBAL & RESETS
+   ========================================================================== */
+
+/* Hide scrollbars completely across the app */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
 :host { 
   display: block; 
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
 }
+
+/* ==========================================================================
+   THEME VARIABLES
+   ========================================================================== */
 
 .app-container { 
   /* TRUE Dark Theme Variables */
@@ -38,42 +55,270 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Sidebar & Header */
-.sidebar { width: 260px; background-color: var(--sidebar-bg); color: var(--text-sidebar); padding: 20px; display: flex; flex-direction: column; transition: background-color 0.3s; border-right: 1px solid var(--border); }
-.header-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
-.header-row h2 { font-size: 18px; margin: 0; font-weight: 500; }
-.theme-btn { background: none; border: none; font-size: 18px; cursor: pointer; padding: 5px; border-radius: 50%; transition: background 0.2s; color: var(--text-main); }
-.theme-btn:hover { background: var(--hover-bg); }
+/* ==========================================================================
+   SIDEBAR
+   ========================================================================== */
 
-/* Buttons & Lists */
-.new-chat-btn { background: var(--accent); color: white; border: none; padding: 12px; border-radius: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; margin-bottom: 20px; font-weight: 500; }
-.sidebar ul { list-style: none; padding: 0; margin: 0; overflow-y: auto; flex: 1; }
-.sidebar li { display: flex; justify-content: space-between; align-items: center; padding: 10px 15px; margin-bottom: 4px; border-radius: 8px; cursor: pointer; font-size: 14px; color: var(--text-sidebar); transition: all 0.2s; }
-.sidebar li:hover { background: var(--hover-bg); }
-.sidebar li.active-session { background: var(--active-bg); font-weight: 500; color: var(--text-main); }
-.session-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1; }
-.delete-btn { background: none; border: none; cursor: pointer; font-size: 14px; opacity: 0; transition: opacity 0.2s; color: var(--text-main); }
-.sidebar li:hover .delete-btn { opacity: 1; }
-.delete-btn:hover { transform: scale(1.1); }
-.status-text { font-size: 12px; margin-top: auto; color: #888; }
+.sidebar { 
+  width: 260px; 
+  background-color: var(--sidebar-bg); 
+  color: var(--text-sidebar); 
+  padding: 20px; 
+  display: flex; 
+  flex-direction: column; 
+  transition: background-color 0.3s; 
+  border-right: 1px solid var(--border); 
+  
+  /* UI POLISH: Resizable & constraints */
+  resize: horizontal;
+  overflow: hidden; 
+  min-width: 250px; 
+  max-width: 50vw;
+  
+  .header-row { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 20px; 
+    
+    h2 { 
+      font-size: 18px; 
+      margin: 0; 
+      font-weight: 500; 
+    }
+  }
+  
+  .theme-btn { 
+    background: none; 
+    border: none; 
+    font-size: 18px; 
+    cursor: pointer; 
+    padding: 5px; 
+    border-radius: 50%; 
+    transition: background 0.2s; 
+    color: var(--text-main); 
+    
+    &:hover { background: var(--hover-bg); }
+  }
 
-/* Main Chat Area */
-.main-content { flex: 1; display: flex; flex-direction: column; position: relative; }
-.chat-container { flex: 1; padding: 40px 15%; overflow-y: auto; display: flex; flex-direction: column; gap: 24px; padding-bottom: 120px; }
-.message { max-width: 80%; line-height: 1.6; padding: 16px 20px; border-radius: 24px; font-size: 15px; white-space: pre-wrap; }
-.user-msg { background-color: var(--bubble-user); align-self: flex-end; border-bottom-right-radius: 4px; color: var(--text-main); }
-.ai-msg { background-color: var(--bubble-ai); align-self: flex-start; border-bottom-left-radius: 4px; border: 1px solid var(--border); color: var(--text-main); }
-.loading-msg { font-style: italic; color: #888; animation: pulse 1.5s infinite; }
+  .new-chat-btn { 
+    background: var(--accent); 
+    color: white; 
+    border: none; 
+    padding: 12px; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 14px; 
+    margin-bottom: 20px; 
+    font-weight: 500; 
+  }
 
-/* Input Area */
-.input-wrapper { position: absolute; bottom: 30px; left: 15%; right: 15%; background: var(--input-bg); border-radius: 30px; display: flex; align-items: center; padding: 10px 20px; border: 1px solid var(--border); box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: background-color 0.3s; }
-.file-btn { background: none; border: none; cursor: pointer; font-size: 20px; width: 40px; height: 40px; color: var(--text-main); }
-#file-input { display: none; }
-textarea { flex: 1; border: none; outline: none; resize: none; font-size: 16px; padding: 10px; max-height: 100px; background: transparent; color: var(--text-main); }
-textarea::placeholder { color: #888; }
-.send-btn { background: var(--accent); color: white; border: none; cursor: pointer; border-radius: 50%; width: 40px; height: 40px; font-weight: bold; }
-.file-badge { font-size: 12px; background: #3c4043; color: #8ab4f8; padding: 4px 8px; border-radius: 12px; margin-bottom: 8px; display: inline-block; border: 1px solid #5f6368; }
+  ul#sessionList { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    overflow-y: auto; 
+    flex: 1; 
+    
+    /* UI POLISH: Bottom padding and Fade Mask */
+    padding-bottom: 40px; 
+    -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    
+    li { 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+      padding: 10px 15px; 
+      margin-bottom: 4px; 
+      border-radius: 8px; 
+      cursor: pointer; 
+      font-size: 14px; 
+      color: var(--text-sidebar); 
+      transition: all 0.2s; 
+      
+      &:hover { 
+        background: var(--hover-bg); 
+        .delete-btn { opacity: 1; }
+      }
+      
+      &.active-session { 
+        background: var(--active-bg); 
+        font-weight: 500; 
+        color: var(--text-main); 
+      }
+      
+      .session-title { 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        flex: 1; 
+      }
+      
+      .delete-btn { 
+        background: none; 
+        border: none; 
+        cursor: pointer; 
+        font-size: 14px; 
+        opacity: 0; 
+        transition: opacity 0.2s, transform 0.2s; 
+        color: var(--text-main); 
+        
+        &:hover { transform: scale(1.1); }
+      }
+    }
+  }
 
-.light-theme .file-badge { background: #e8f0fe; color: #1967d2; border: none; }
+  .status-text { 
+    font-size: 12px; 
+    margin-top: auto; 
+    color: #888; 
+  }
+}
 
-@keyframes pulse { 0% { opacity: 0.6; } 50% { opacity: 1; } 100% { opacity: 0.6; } }
+/* ==========================================================================
+   MAIN CONTENT & CHAT
+   ========================================================================== */
+
+.main-content { 
+  flex: 1; 
+  display: flex; 
+  flex-direction: column; 
+  position: relative; 
+}
+
+.chat-container { 
+  flex: 1; 
+  padding: 40px 15%; 
+  overflow-y: auto; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 24px; 
+  
+  /* Increased padding so the newest message can be scrolled up past the higher fade line */
+  padding-bottom: 180px; 
+  
+  /* THE NEW MASK: 
+     - Stays 100% solid until 220px from the bottom.
+     - Becomes 100% transparent at 110px from the bottom (safely above your input box).
+  */
+  -webkit-mask-image: linear-gradient(to bottom, black calc(100% - 220px), transparent calc(100% - 110px));
+  mask-image: linear-gradient(to bottom, black calc(100% - 220px), transparent calc(100% - 110px));
+  
+  .message { 
+    max-width: 80%; 
+    line-height: 1.6; 
+    padding: 16px 20px; 
+    border-radius: 24px; 
+    font-size: 15px; 
+    white-space: pre-wrap; 
+    
+    &.user-msg { 
+      background-color: var(--bubble-user); 
+      align-self: flex-end; 
+      border-bottom-right-radius: 4px; 
+      color: var(--text-main); 
+    }
+    
+    &.ai-msg { 
+      background-color: var(--bubble-ai); 
+      align-self: flex-start; 
+      border-bottom-left-radius: 4px; 
+      border: 1px solid var(--border); 
+      color: var(--text-main); 
+    }
+    
+    &.loading-msg { 
+      font-style: italic; 
+      color: #888; 
+      animation: pulse 1.5s infinite; 
+    }
+  }
+}
+
+/* ==========================================================================
+   INPUT AREA
+   ========================================================================== */
+
+.input-wrapper { 
+  position: absolute; 
+  bottom: 30px; 
+  left: 15%; 
+  right: 15%; 
+  background: var(--input-bg); 
+  border-radius: 30px; 
+  display: flex; 
+  align-items: center; 
+  padding: 10px 20px; 
+  border: 1px solid var(--border); 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+  transition: background-color 0.3s; 
+  z-index: 10;
+  
+  #file-input { display: none; }
+  
+  .file-btn { 
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 20px; 
+    width: 40px; 
+    height: 40px; 
+    color: var(--text-main); 
+  }
+  
+  textarea { 
+    flex: 1; 
+    border: none; 
+    outline: none; 
+    resize: none; 
+    font-size: 16px; 
+    padding: 10px; 
+    max-height: 100px; 
+    background: transparent; 
+    color: var(--text-main); 
+    
+    &::placeholder { color: #888; }
+  }
+  
+  .send-btn { 
+    background: var(--accent); 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 50%; 
+    width: 40px; 
+    height: 40px; 
+    font-weight: bold; 
+  }
+}
+
+/* ==========================================================================
+   MISC & UTILITIES
+   ========================================================================== */
+
+.file-badge { 
+  font-size: 12px; 
+  background: #3c4043; 
+  color: #8ab4f8; 
+  padding: 4px 8px; 
+  border-radius: 12px; 
+  margin-bottom: 8px; 
+  display: inline-block; 
+  border: 1px solid #5f6368; 
+}
+
+.light-theme .file-badge { 
+  background: #e8f0fe; 
+  color: #1967d2; 
+  border: none; 
+}
+
+@keyframes pulse { 
+  0% { opacity: 0.6; } 
+  50% { opacity: 1; } 
+  100% { opacity: 0.6; } 
+}

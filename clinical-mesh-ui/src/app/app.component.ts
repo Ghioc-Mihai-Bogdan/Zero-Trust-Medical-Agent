@@ -35,7 +35,16 @@ export class AppComponent implements AfterViewChecked, OnInit {
 
   onFileSelected(event: any) {
     const file = event.target.files[0];
-    if (file) { this.selectedFile = file; alert(`File attached: ${file.name}`); }
+    if (file) { 
+      this.selectedFile = file; 
+      // The annoying browser alert is officially deleted!
+    }
+  }
+
+  removeFile() {
+    this.selectedFile = null;
+    const fileInput = document.getElementById('file-input') as HTMLInputElement;
+    if (fileInput) fileInput.value = '';
   }
 
   handleEnter(event: KeyboardEvent) {
