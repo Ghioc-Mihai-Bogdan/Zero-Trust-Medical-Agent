@@ -16,6 +16,24 @@ except:
 
 def ask_gemma_local(prompt, system_instruction):
     url = "http://10.42.0.1:11434/api/generate"
+    
+    # --- THE FIX: Force 100% of layers to the GPU ---
+    payload = {
+        "model": "gemma4:e4b", 
+        "prompt": prompt, 
+        "system": system_instruction, 
+        "stream": False,
+        "keep_alive": "5m",         # Keeps the model in VRAM between prompts
+        "options": {
+            "num_gpu": 99           # 99 is shorthand for "All Layers"
+        }
+    }
+    
+    try:
+        return requests.post(url, json=payload, timeout=300).json().get('response', '')
+    except Exception as e:
+        return f"[Local AI Error: {str(e)}]"
+    url = "http://10.42.0.1:11434/api/generate"
     payload = {"model": "gemma4:e4b", "prompt": prompt, "system": system_instruction, "stream": False}
     try:
         return requests.post(url, json=payload, timeout=300).json().get('response', '')
