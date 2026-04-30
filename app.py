@@ -183,6 +183,7 @@ def process():
             3. Greet the attending physician: {doctor_name}
             4. Include today's date: {current_date}
             5. Write full, descriptive sentences for the Diagnoses and Patient Education sections. Do not just list terms; explain them thoroughly.
+            6. THE ESCAPE HATCH: If the provided data indicates the patient is healthy, asymptomatic, or here for a routine check-up, write a "Wellness/Routine Examination" report. DO NOT fabricate symptoms, warnings, or treatments. Synthesize the findings to confirm the patient's healthy status and outline preventative care.
 
             DATA TO FORMAT:
             - Codes: {coder_res.get('icd10_codes', 'No codes provided')}

@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+/* ==========================================================================
+   GLOBAL BROWSER RESET
+   ========================================================================== */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  /* This kills the outer scrollbar permanently */
+  overflow: hidden; 
+  
+  /* Ensures background matches your dark theme while loading */
+  background-color: #131314; 
+}
