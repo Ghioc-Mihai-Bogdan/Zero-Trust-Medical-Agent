@@ -37,7 +37,6 @@ export class AppComponent implements AfterViewChecked, OnInit {
     const file = event.target.files[0];
     if (file) { 
       this.selectedFile = file; 
-      // The annoying browser alert is officially deleted!
     }
   }
 
@@ -51,9 +50,40 @@ export class AppComponent implements AfterViewChecked, OnInit {
     if (event.key === 'Enter' && !event.shiftKey) { event.preventDefault(); this.send(); }
   }
 
-  send() {
+  // NEW: Helper function to extract base64 from the image file
+  private async fileToBase64(file: File): Promise<string> {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        // e.target.result looks like "data:image/jpeg;base64,/9j/4..."
+        // We MUST split at the comma and only send the raw string!
+        const base64String = (reader.result as string).split(',')[1];
+        resolve(base64String);
+      };
+      reader.onerror = error => reject(error);
+    });
+  }
+
+  // NEW: Made async so we can await the base64 encoding before sending
+  async send() {
     if (!this.userInput.trim() && !this.selectedFile) return;
-    this.chatService.sendMessage(this.userInput, this.selectedFile || undefined);
+
+    let base64Image: string | undefined = undefined;
+
+    // If an image file is attached, encode it!
+    if (this.selectedFile && this.selectedFile.type.startsWith('image/')) {
+      try {
+        base64Image = await this.fileToBase64(this.selectedFile);
+      } catch (err) {
+        console.error("Failed to encode image", err);
+      }
+    }
+
+    // Pass the extracted base64 string to your service
+    // (We pass it as a third parameter so we don't break existing file logic)
+    this.chatService.sendMessage(this.userInput, this.selectedFile || undefined, base64Image);
+
     this.userInput = '';
     this.selectedFile = null;
     const fileInput = document.getElementById('file-input') as HTMLInputElement;

@@ -87,6 +87,10 @@ def process():
     file_name = None
     file_content = None
 
+    # --- NEW: Extract the Base64 image sent from Angular ---
+    base64_image = data.get('base64_image')
+    patient_images = [base64_image] if base64_image else []
+
     if 'file' in request.files:
         uploaded_file = request.files['file']
         if uploaded_file.filename != '':
@@ -97,7 +101,8 @@ def process():
             except Exception as e:
                 return jsonify({"error": f"Could not read the attached text file: {str(e)}"}), 400
 
-    if not user_text.strip(): return jsonify({"error": "No prompt or file data was provided."}), 400
+    if not user_text.strip() and not patient_images: 
+        return jsonify({"error": "No prompt or file data was provided."}), 400
 
     history = []
     if redis_client:
@@ -148,10 +153,19 @@ def process():
             if "CLINICAL" in intent_check: intent = "CLINICAL"
 
         if intent == "CLINICAL":
+            
+            # --- NEW: Build the Multimodal Payload for the Diagnostician ---
+            diag_payload = {"text": clean_symptoms}
+            if patient_images:
+                diag_payload["images"] = patient_images
+                
             with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
                 coder_future = executor.submit(safe_agent_call, "http://medical-coder:8080/code", {"text": clean_symptoms}, "icd10_codes")
                 acuity_future = executor.submit(safe_agent_call, "http://acuity-analyzer:8080/analyze", {"text": clean_symptoms}, "acuity_level")
-                diag_future = executor.submit(safe_agent_call, "http://diagnostician:8080/diagnose", {"text": clean_symptoms}, "diagnoses")
+                
+                # --- Send to the Multimodal Diagnostician! ---
+                diag_future = executor.submit(safe_agent_call, "http://diagnostician:8080/diagnose", diag_payload, "diagnoses")
+                
                 ed_future = executor.submit(safe_agent_call, "http://patient-educator:8080/educate", {"text": clean_symptoms}, "patient_explanation")
 
                 coder_res = coder_future.result()

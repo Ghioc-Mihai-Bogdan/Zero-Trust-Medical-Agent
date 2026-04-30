@@ -10,7 +10,6 @@ export class ChatService {
   private http = inject(HttpClient);
   private apiUrl = '/api'; 
   
-  // FIX: Maps to track background generations per-session
   private pendingRequests = new Map<string, Subscription>();
   private loadingMap = new Set<string>();
 
@@ -23,7 +22,6 @@ export class ChatService {
     this.loadSessionsFromStorage(); 
   }
 
-  // Refreshes the UI loading state based on which chat you are currently viewing
   private updateLoadingState() {
     this.isLoading.next(this.loadingMap.has(this.activeSessionId.value || ''));
   }
@@ -53,7 +51,7 @@ export class ChatService {
     if (!sessionId) return;
     const req = this.pendingRequests.get(sessionId);
     if (req) {
-      req.unsubscribe(); // Severs the HTTP connection
+      req.unsubscribe(); 
       this.pendingRequests.delete(sessionId);
       this.loadingMap.delete(sessionId);
       this.updateLoadingState();
@@ -69,7 +67,6 @@ export class ChatService {
   }
 
   async switchSession(id: string) {
-    // We NO LONGER call stopGeneration() here! The old chat will keep generating safely in the background.
     this.activeSessionId.next(id);
     this.updateLoadingState();
     this.currentChat.next([]); 
@@ -81,7 +78,6 @@ export class ChatService {
       if (res.history && res.history.length > 0) {
         const mapped: Message[] = res.history.map((msg: any) => ({
           role: msg.role === 'Clinical AI' ? 'ai' : 'user', 
-          // FIX: Force empty strings if null to prevent the bubble from disappearing
           content: msg.content || '', 
           fileName: msg.file_name || msg.fileName
         }));
@@ -96,7 +92,7 @@ export class ChatService {
 
   deleteSession(id: string, event: Event) {
     event.stopPropagation(); 
-    this.stopGeneration(); // Stop if deleted
+    this.stopGeneration(); 
     const updatedSessions = this.sessions.value.filter(s => s.id !== id);
     this.sessions.next(updatedSessions);
     localStorage.setItem('mesh_sessions', JSON.stringify(updatedSessions));
@@ -110,7 +106,8 @@ export class ChatService {
     }
   }
 
-  sendMessage(prompt: string, file?: File) {
+  // FIXED: Added base64Image to the expected arguments!
+  sendMessage(prompt: string, file?: File, base64Image?: string) {
     const sessionId = this.activeSessionId.value;
     if (!sessionId) return; 
 
@@ -124,18 +121,25 @@ export class ChatService {
 
     this.currentChat.next([...this.currentChat.value, { role: 'user', content: prompt, fileName: file?.name }]);
     
-    // Track loading for THIS specific session
     this.loadingMap.add(sessionId);
     this.updateLoadingState();
 
     const formData = new FormData();
     formData.append('session_id', sessionId);
     formData.append('prompt', prompt);
-    if (file) formData.append('file', file);
+    
+    // SMART ROUTING: Never send the file twice.
+    if (base64Image) {
+      // It's an image: Send the Base64 string, and just the name of the file
+      formData.append('base64_image', base64Image);
+      if (file) formData.append('image_name', file.name); 
+    } else if (file) {
+      // It's a text/PDF document: Send the actual binary file
+      formData.append('file', file);
+    }
 
     const req = this.http.post(`${this.apiUrl}/process`, formData).subscribe({
       next: (res: any) => {
-        // --- NEW FEATURE: Dynamically update the sidebar title ---
         if (res.session_title) {
           const sessions = this.sessions.value;
           const s = sessions.find(s => s.id === sessionId);
