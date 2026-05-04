@@ -128,13 +128,36 @@ export class ChatService {
     formData.append('session_id', sessionId);
     formData.append('prompt', prompt);
     
-    // SMART ROUTING: Never send the file twice.
+    // THE FIX: Strict Routing with a Safety Net
     if (base64Image) {
-      // It's an image: Send the Base64 string, and just the name of the file
+      // Success: Send the lightweight compressed string
       formData.append('base64_image', base64Image);
       if (file) formData.append('image_name', file.name); 
+
+      // === DIAGNOSTIC LOG ===
+      // This will print the exact size of the compressed base64 string in Kilobytes
+      console.log("Diagnostic - Payload Size (KB):", Math.round(base64Image.length / 1024));
+      // ======================
+
     } else if (file) {
-      // It's a text/PDF document: Send the actual binary file
+      // DANGER CHECK: Is it an image that failed compression?
+      if (file.type.startsWith('image/')) {
+         console.error("CRITICAL: Image compression failed. Aborting upload to prevent network crash.");
+         
+         // Cleanly reset the UI state
+         this.loadingMap.delete(sessionId);
+         this.pendingRequests.delete(sessionId);
+         this.updateLoadingState();
+         
+         // Display a graceful error message in the chat
+         this.currentChat.next([...this.currentChat.value, { 
+           role: 'ai', 
+           content: '🛑 System Error: The image was too massive for the browser to compress, or the format is corrupted. Please try a smaller file.' 
+         }]);
+         return; // STOP THE REQUEST!
+      }
+      
+      // It's a text/PDF document: Send the actual binary file safely
       formData.append('file', file);
     }
 
@@ -163,6 +186,7 @@ export class ChatService {
          this.loadingMap.delete(sessionId);
          this.pendingRequests.delete(sessionId);
          this.updateLoadingState();
+         this.currentChat.next([...this.currentChat.value, { role: 'ai', content: '🛑 Network Error: The server dropped the connection.' }]);
       }
     });
     

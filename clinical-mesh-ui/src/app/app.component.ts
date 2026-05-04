@@ -50,38 +50,68 @@ export class AppComponent implements AfterViewChecked, OnInit {
     if (event.key === 'Enter' && !event.shiftKey) { event.preventDefault(); this.send(); }
   }
 
-  // NEW: Helper function to extract base64 from the image file
-  private async fileToBase64(file: File): Promise<string> {
+  // THE FIX: Advanced Client-Side Image Compression
+  private async compressAndEncodeImage(file: File): Promise<string> {
     return new Promise((resolve, reject) => {
       const reader = new FileReader();
       reader.readAsDataURL(file);
-      reader.onload = () => {
-        // e.target.result looks like "data:image/jpeg;base64,/9j/4..."
-        // We MUST split at the comma and only send the raw string!
-        const base64String = (reader.result as string).split(',')[1];
-        resolve(base64String);
+      reader.onload = (event: any) => {
+        const img = new Image();
+        img.src = event.target.result;
+        img.onload = () => {
+          const canvas = document.createElement('canvas');
+          const ctx = canvas.getContext('2d');
+
+          // Maximum dimensions for the vision model
+          const MAX_WIDTH = 1024;
+          const MAX_HEIGHT = 1024;
+          let width = img.width;
+          let height = img.height;
+
+          // Calculate new dimensions while maintaining aspect ratio
+          if (width > height) {
+            if (width > MAX_WIDTH) {
+              height *= MAX_WIDTH / width;
+              width = MAX_WIDTH;
+            }
+          } else {
+            if (height > MAX_HEIGHT) {
+              width *= MAX_HEIGHT / height;
+              height = MAX_HEIGHT;
+            }
+          }
+
+          canvas.width = width;
+          canvas.height = height;
+
+          // Draw the resized image onto the canvas
+          ctx?.drawImage(img, 0, 0, width, height);
+
+          // CRITICAL: Force the output to be a compressed JPEG, even if they uploaded a PNG!
+          const compressedBase64 = canvas.toDataURL('image/jpeg', 0.8).split(',')[1];
+          resolve(compressedBase64);
+        };
+        img.onerror = error => reject(error);
       };
       reader.onerror = error => reject(error);
     });
   }
 
-  // NEW: Made async so we can await the base64 encoding before sending
   async send() {
     if (!this.userInput.trim() && !this.selectedFile) return;
 
     let base64Image: string | undefined = undefined;
 
-    // If an image file is attached, encode it!
+    // If an image file is attached, run it through the compression engine!
     if (this.selectedFile && this.selectedFile.type.startsWith('image/')) {
       try {
-        base64Image = await this.fileToBase64(this.selectedFile);
+        base64Image = await this.compressAndEncodeImage(this.selectedFile);
       } catch (err) {
-        console.error("Failed to encode image", err);
+        console.error("Failed to compress and encode image", err);
       }
     }
 
     // Pass the extracted base64 string to your service
-    // (We pass it as a third parameter so we don't break existing file logic)
     this.chatService.sendMessage(this.userInput, this.selectedFile || undefined, base64Image);
 
     this.userInput = '';
