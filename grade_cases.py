@@ -1,15 +1,10 @@
 import requests
-import json
-import time
-import os
-from datasets import load_dataset
+import csv
 from tqdm import tqdm
 
-DATASET_NAME = "gretelai/symptom_to_diagnosis"
-API_URL = "http://127.0.0.1:8088/diagnose"
 OLLAMA_URL = "http://127.0.0.1:11434/api/generate"
 JUDGE_MODEL = "gemma4:31b"
-SAVE_FILE = "test_results_raw.json"
+INPUT_FILE = "medical_cases_output.csv"
 
 def evaluate_with_31b(expected, ai_output):
     """Uses the 31B model to read the verbose notes and check for the correct diagnosis."""
@@ -45,47 +40,25 @@ def evaluate_with_31b(expected, ai_output):
         return False
 
 # ==========================================
-# SETUP
+# PHASE 2: 31B GRADING FROM CSV
 # ==========================================
-print(f"Loading dataset: {DATASET_NAME}...")
-dataset = load_dataset(DATASET_NAME, split="train")
-
-sample_size = int(len(dataset) * 0.10)
-print(f"Selecting a random 10% ({sample_size} cases) for testing...")
-dataset = dataset.shuffle(seed=42).select(range(sample_size))
-
-# ==========================================
-# PHASE 1: GENERATION & STORAGE
-# ==========================================
-print("\n=== PHASE 1: Collecting Diagnostician Answers ===")
+print(f"\n=== PHASE 2: 31B Model Grading from {INPUT_FILE} ===")
 collected_data = []
 
-for row in tqdm(dataset, desc="Generating Notes"):
-    symptoms = row['input_text']
-    true_diagnosis = row['output_text'].lower()
-    
-    try:
-        response = requests.post(API_URL, json={"text": symptoms}, timeout=120)
-        ai_output = response.json().get('diagnoses', '')
-        
-        collected_data.append({
-            "symptoms": symptoms,
-            "expected": true_diagnosis,
-            "ai_output": ai_output
-        })
-        time.sleep(1) # Protect Kubernetes from DDOS
-    except Exception as e:
-        print(f"API Error on case: {str(e)}")
+# Read from CSV
+try:
+    with open(INPUT_FILE, mode='r', encoding='utf-8') as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            collected_data.append(row)
+except FileNotFoundError:
+    print(f"❌ Error: Could not find '{INPUT_FILE}'. Please run the generation script first.")
+    exit()
 
-# Save to disk just in case!
-with open(SAVE_FILE, "w") as f:
-    json.dump(collected_data, f, indent=4)
-print(f"Saved {len(collected_data)} raw cases to {SAVE_FILE}.")
+if not collected_data:
+    print("❌ Error: The CSV file is empty.")
+    exit()
 
-# ==========================================
-# PHASE 2: 31B GRADING
-# ==========================================
-print("\n=== PHASE 2: 31B Model Grading ===")
 correct = 0
 failed_cases = []
 successful_cases = []
@@ -105,8 +78,7 @@ accuracy = (correct / len(collected_data)) * 100
 print("\n" + "="*50)
 print(" 📊 FINAL EVALUATION REPORT (31B Graded)")
 print("="*50)
-print(f"Tested Model: Gemma 4:31b (Verbose Notes)")
-print(f"Judge Model:  Gemma 4:31b (Zero Temp)")
+print(f"Judge Model:  {JUDGE_MODEL} (Zero Temp)")
 print(f"Cases Eval'd: {len(collected_data)}")
 print(f"Successful:   {correct}")
 print(f"Missed:       {len(failed_cases)}")

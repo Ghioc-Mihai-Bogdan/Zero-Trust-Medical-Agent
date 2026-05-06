@@ -1,0 +1,605 @@
+symptoms,expected,ai_output
+"I've been having chest pain, dizziness, and a headache that feels like it's in a narrow zone around my head.",hypertension,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Hypertensive Crisis**: Severely elevated blood pressure can cause a ""pressure-like"" headache, dizziness due to neurological strain, and chest pain resulting from acute cardiac stress or ischemia.
+2. **Panic Disorder/Anxiety Attack**: These episodes often manifest as chest tightness, dizziness (frequently caused by hyperventilation), and tension-type headaches, which are typically described as a tight band or narrow zone around the head.
+3. **Carbon Monoxide Poisoning**: This systemic toxicity causes a lack of oxygen delivery to tissues, leading to the classic triad of a dull headache, dizziness, and chest pain due to myocardial ischemia.
+
+***Disclaimer:** I am an AI, not a doctor. These symptoms—especially chest pain and dizziness—can indicate a medical emergency. Please seek immediate medical attention or call emergency services.*"
+I have a rash on my skin that has blisters. The blisters are filled with fluid and are painful to touch. I also have a fever.,impetigo,"Based on the symptoms of a painful, fluid-filled blistering rash accompanied by a fever, here are the top three differential diagnoses:
+
+1. **Herpes Zoster (Shingles):** This condition typically presents as painful, fluid-filled blisters that follow a specific nerve pathway (dermatome) and can be accompanied by systemic symptoms like fever.
+2. **Varicella (Chickenpox):** This is characterized by widespread, itchy, fluid-filled blisters (often described as ""dewdrops on a rose petal"") and is almost always associated with a fever.
+3. **Herpes Simplex Virus (HSV):** While often localized to the mouth or genitals, HSV causes clusters of painful, fluid-filled blisters and can cause fever and malaise, particularly during a primary (first) infection.
+
+***Disclaimer:** I am an AI, not a doctor. These differentials are for informational purposes only. Please consult a healthcare provider for an accurate diagnosis and treatment plan.*"
+I've been feeling really tired and sick. I've had a bad cough and sore throat. I've been shivering and have a fever. I just feel really run down.,common cold,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Influenza (Flu):** The combination of sudden onset fever, shivering (chills), cough, sore throat, and profound fatigue is classic for the flu.
+2. **COVID-19:** This virus presents with a nearly identical constellation of symptoms, including fever, respiratory distress (cough/sore throat), and systemic malaise.
+3. **Common Cold:** While usually milder, a cold causes a sore throat and cough; however, the presence of fever and shivering makes this slightly less likely than the flu or COVID-19."
+I've been feeling really tired and my eyes have been really red. My nose is stuffy and I've been coughing up a lot of phlegm. I've also noticed my lymph nodes are swollen.,common cold,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Adenoviral Infection (Pharyngoconjunctival Fever):** This is a primary consideration because Adenovirus is one of the few viruses that characteristically causes a ""triad"" of conjunctivitis (red eyes), pharyngitis/cough, and fever, along with nasal congestion and swollen lymph nodes.
+2. **Influenza (The Flu):** The combination of systemic fatigue, a productive cough, and nasal congestion is highly characteristic of the flu, which often triggers a systemic immune response resulting in lymphadenopathy.
+3. **COVID-19:** This diagnosis matches the respiratory symptoms (stuffy nose, phlegm, cough) and significant fatigue, and while less common than in Adenovirus, conjunctivitis has been reported as a symptom in several variants."
+"I've been experiencing neck pain, balance issues, and dizziness.",cervical spondylosis,"Based on the combination of neck pain, balance issues, and dizziness, here are the top three differential diagnoses:
+
+1. **Cervicogenic Dizziness**: Dysfunction or injury in the cervical spine and neck muscles can send conflicting proprioceptive signals to the brain, resulting in a sensation of dizziness and imbalance.
+2. **Cervical Spondylotic Myelopathy**: Degenerative changes in the neck can cause localized pain and compress the spinal cord, which often manifests as impaired balance and gait instability.
+3. **Vertebrobasilar Insufficiency (VBI)**: Mechanical issues in the neck (such as arterial compression during certain movements) can reduce blood flow to the posterior brain, triggering vertigo, dizziness, and loss of coordination.
+
+***Disclaimer:** I am an AI, not a doctor. These possibilities are for informational purposes and should be evaluated by a healthcare professional for an accurate diagnosis.*"
+I have a rash on my face and near my nose. It's been there for a few days and it's starting to spread down my arms and legs.,impetigo,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Viral Exanthem**: The progression of a rash starting on the face and spreading downward (caudally) to the arms and legs is a classic presentation for many viral infections.
+2. **Drug Eruption (Hypersensitivity Reaction)**: A reaction to a new medication often presents as a symmetric rash that can begin on the face or trunk and rapidly spread to the extremities.
+3. **Systemic Lupus Erythematosus (SLE)**: The description of a rash near the nose is highly suggestive of a ""malar"" or butterfly rash, and the spread to the limbs may indicate systemic autoimmune activity.
+
+***Disclaimer:** I am an AI, not a doctor. These possibilities are for informational purposes and do not constitute a medical diagnosis. Please consult a healthcare provider for an accurate diagnosis and treatment plan.*"
+"I've been feeling really sick. I have a high fever, chills, and severe itching. I've also been vomiting and having a headache. I'm also sweating a lot and feeling nauseous and achy.",malaria,"Based on the combination of systemic ""flu-like"" symptoms (high fever, chills, headache, nausea, and vomiting) and the specific mention of severe itching, here are the top three differential diagnoses:
+
+1. **Dengue Fever**
+This condition matches the high fever, severe headache, and ""achy"" feeling (myalgia), as well as the nausea and vomiting; it is particularly noted for producing a characteristic skin rash that can be intensely itchy.
+
+2. **Acute Hepatitis (Viral or Toxic)**
+The high fever, nausea, and vomiting are common in acute liver inflammation, while the severe itching (pruritus) is a hallmark sign of cholestasis, where bile salts build up in the skin due to liver dysfunction.
+
+3. **Malaria**
+The classic ""malarial paroxysm""—characterized by cycles of shaking chills, high fever, and profuse sweating—matches your symptoms perfectly, alongside the accompanying headache and gastrointestinal distress."
+"I've been having a lot of headaches lately, and they're getting worse. I also have a sore neck, and I'm feeling anxious and irritated. I've also been having trouble seeing things clearly.",migraine,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Hypertensive Emergency/Crisis**: Extremely high blood pressure can cause a ""hypertensive encephalopathy,"" leading to severe headaches, visual disturbances (due to retinal changes), and neurological irritability or anxiety.
+2. **Meningitis**: The classic combination of a worsening headache and a sore/stiff neck, accompanied by altered mental status (such as irritability and anxiety), is highly suggestive of inflammation of the meninges.
+3. **Idiopathic Intracranial Hypertension (IIH)**: Increased pressure of the cerebrospinal fluid can cause worsening headaches and blurred vision (due to papilledema), and is often associated with neck pain and general discomfort."
+"My genitals are red and irritated. It is often itchy, burning, and painful. I also have rashes on other parts of my body and my joints hurt.",psoriasis,"Based on the combination of genital irritation, widespread rashes, and joint pain, the following are the top three differential diagnoses:
+
+1. **Psoriasis with Psoriatic Arthritis**: Inverse psoriasis typically presents as smooth, red, burning patches in skin folds and genitals, while plaque psoriasis affects other parts of the body; the accompanying joint pain is characteristic of the associated psoriatic arthritis.
+2. **Reactive Arthritis**: This condition often presents as a triad of urogenital inflammation (causing burning and irritation), asymmetric joint pain, and systemic skin lesions (such as keratoderma blennorrhagicum).
+3. **Secondary Syphilis**: This stage of the infection is characterized by a widespread maculopapular rash (which can include the genitals and palms/soles) and systemic symptoms that can include arthralgia (joint pain).
+
+***Disclaimer:** I am an AI, not a doctor. These differentials are for informational purposes and do not constitute a medical diagnosis. Please consult a healthcare provider for a physical examination and necessary diagnostic testing.*"
+"I'm always thirsty and hungry, and I have to pee all the time. I've also lost a lot of weight recently, and I'm always tired.",diabetes,"Based on the symptoms provided—specifically the ""classic triad"" of polyuria (frequent urination), polydipsia (excessive thirst), and polyphagia (excessive hunger), combined with weight loss and fatigue—here are the top three differential diagnoses:
+
+1. **Diabetes Mellitus Type 1**: This is a primary consideration as the absolute lack of insulin leads to hyperglycemia, causing glucose to spill into the urine (pulling water with it), which triggers dehydration, extreme thirst, and weight loss as the body breaks down fat and muscle for energy.
+2. **Diabetes Mellitus Type 2**: While often more gradual in onset, severe insulin resistance can produce the same symptoms of polyuria, polydipsia, and polyphagia, and can lead to weight loss when blood glucose levels are significantly elevated.
+3. **Hyperthyroidism**: An overactive thyroid increases the basal metabolic rate, which explains the significant weight loss, increased appetite (hunger), and profound fatigue, although it is less likely to cause the frequent urination and thirst seen in diabetes."
+My neck has been very tight and my muscles have felt quite weak recently. It's tough for me to move around without getting stiff because of my swollen joints. Walking has also been very uncomfortable.,arthritis,"Based on the symptoms of joint swelling, muscle weakness, and significant stiffness in the neck and lower extremities, here are the top three differential diagnoses:
+
+1. **Rheumatoid Arthritis (RA):** This is a primary consideration because the combination of swollen joints and stiffness (particularly in the morning) typically leads to impaired mobility and secondary muscle weakness.
+2. **Polymyalgia Rheumatica (PMR):** This condition matches the patient's report of profound stiffness and tightness specifically in the neck and pelvic girdle, which often makes walking and general movement very difficult.
+3. **Dermatomyositis/Polymyositis:** These inflammatory myopathies are characterized by proximal muscle weakness (making walking difficult) and are frequently accompanied by joint inflammation and stiffness."
+"I have a rash on my skin that is itchy and uncomfortable. I have also noticed small dents in my nails, which is concerning.",psoriasis,"Based on the combination of an itchy rash and nail pitting (the small dents in the nails), here are the top three differential diagnoses:
+
+1. **Psoriasis**: This is the most likely diagnosis, as nail pitting is a hallmark sign of psoriatic nail disease, and the associated skin rash is typically inflammatory, scaly, and often itchy.
+2. **Atopic Dermatitis (Eczema)**: While nail pitting is less specific to eczema than psoriasis, the intense itching is a primary characteristic, and chronic skin inflammation can lead to various nail dystrophies.
+3. **Lichen Planus**: This condition presents as an intensely itchy, purple-hued rash and can affect the nails, leading to thinning, pitting, or permanent nail loss."
+"I'm feeling sick, shaky, and nauseous. I have a sore throat that makes it hard to breathe. I occasionally have chest pains at night and sometimes feel sick.",allergy,"***Disclaimer:** I am an AI, not a doctor. The following is for informational purposes and should not be used as a substitute for professional medical advice. If you are experiencing difficulty breathing or severe chest pain, please seek emergency medical attention immediately.*
+
+Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Epiglottitis (or Severe Pharyngitis/Tonsillitis):** The combination of a sore throat and difficulty breathing is a red flag for an upper airway obstruction or severe inflammation, while the shakiness and nausea suggest a systemic response to a serious infection.
+2. **Gastroesophageal Reflux Disease (GERD) / Laryngopharyngeal Reflux (LPR):** Nocturnal chest pain (heartburn) and a sore throat are classic signs of stomach acid irritating the esophagus and larynx, which can also cause nausea and a sensation of throat tightness.
+3. **Panic Disorder / Generalized Anxiety Disorder:** The cluster of shakiness, nausea, chest pain, and ""air hunger"" (feeling it is hard to breathe) are hallmark physiological symptoms of severe anxiety or panic attacks."
+I have a lot of red spots on my skin and they are spreading rapidly. I also have a mild fever and headache every night.,chicken pox,"***Disclaimer:** I am an AI, not a doctor. The following is for informational purposes and should be used as a starting point for a conversation with a healthcare professional. **If you are experiencing a rapidly spreading rash, fever, and headache, please seek immediate medical attention at an urgent care or emergency room, as some of these conditions can be life-threatening.***
+
+Based on the symptoms of a rapidly spreading rash, fever, and headache, here are the top three differential diagnoses:
+
+1. **Meningococcemia (Meningococcal Disease)**
+   The combination of a rapidly spreading rash (often petechial or purpuric), fever, and headache is a classic clinical triad for this medical emergency, indicating a systemic bacterial infection.
+
+2. **Rocky Mountain Spotted Fever (RMSF)**
+   This tick-borne illness typically presents with a triad of fever, severe headache, and a characteristic rash that spreads across the body.
+
+3. **Measles (Rubeola)**
+   This viral infection typically begins with a prodrome of high fever and headache, followed by a maculopapular rash that spreads rapidly from the face and neck downward to the rest of the body."
+"I have a fever, chills, and severe itching. I also have a headache and am sweating a lot. I feel awful and have nausea and muscle aches.",malaria,"Based on the combination of systemic ""flu-like"" symptoms (fever, chills, muscle aches, headache) and the specific presence of severe itching, here are the top three differential diagnoses:
+
+1. **Dengue Fever**
+The combination of high fever, severe muscle and joint aches (often called ""breakbone fever""), headache, and nausea is classic for Dengue, and the associated rash is frequently described as intensely pruritic (itchy).
+
+2. **Rocky Mountain Spotted Fever (RMSF)**
+This tick-borne illness presents with the sudden onset of high fever, chills, severe headache, and myalgia; while the characteristic rash is not always itchy, the systemic inflammatory response matches your symptoms.
+
+3. **DRESS Syndrome (Drug Reaction with Eosinophilia and Systemic Symptoms)**
+If you have recently started a new medication, this condition is a strong possibility as it is characterized by a triad of fever, a widespread pruritic (itchy) rash, and systemic involvement affecting internal organs (causing nausea and malaise).
+
+***Disclaimer:** I am an AI, not a doctor. These symptoms—particularly high fever combined with severe itching and nausea—can indicate serious conditions. Please seek immediate medical evaluation at an urgent care or emergency department.*"
+"I've been having migraines and headaches, and I can't sleep. My muscles are twitching and trembling, and I feel dizzy.",drug reaction,"Based on the combination of neurological, muscular, and sleep-related symptoms, here are the top three differential diagnoses:
+
+1. **Generalized Anxiety Disorder (GAD) or Panic Disorder**: These conditions frequently manifest physically as tension-type headaches/migraines, insomnia, muscle tremors or twitching (due to chronic cortisol/adrenaline elevation), and dizziness or lightheadedness.
+2. **Magnesium Deficiency (Hypomagnesemia)**: Magnesium is critical for nerve conduction and muscle relaxation; a deficiency commonly leads to muscle twitching/spasms, insomnia, migraines, and dizziness.
+3. **Hyperthyroidism**: An overactive thyroid accelerates the body's metabolism, which can cause fine muscle tremors, insomnia, anxiety-induced headaches, and dizziness/palpitations.
+
+***Disclaimer:** I am an AI, not a doctor. These differentials are for informational purposes and should be discussed with a licensed healthcare provider for an accurate diagnosis and treatment plan.*"
+"I've been having a lot of trouble urinating. I feel like I have to go all the time, and when I do, it hurts. My urine is also cloudy and has a strong smell.",urinary tract infection,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Urinary Tract Infection (UTI) / Cystitis**: This is the most likely diagnosis as frequency, painful urination (dysuria), cloudy urine, and a strong smell are hallmark signs of a bacterial infection in the bladder.
+2. **Prostatitis**: If the patient is male, inflammation of the prostate can cause difficulty initiating urination (obstructive symptoms) alongside the pain and frequency associated with an infection.
+3. **Sexually Transmitted Infection (STI)**: Certain STIs, such as Chlamydia or Gonorrhea, can cause urethritis, which presents with painful urination and cloudy discharge that can alter the appearance and smell of the urine."
+I have been feeling really tired and I have a fever. I have a rash on my face and it is very itchy. I can't sleep because of the rash.,impetigo,"Based on the symptoms of fever, fatigue, and an intensely pruritic (itchy) facial rash, here are the top three differential diagnoses:
+
+1. **Measles (Rubeola):** This condition typically begins with a prodrome of high fever, fatigue, and malaise, followed by a maculopapular rash that characteristically starts on the face and spreads downward.
+2. **Drug Reaction with Eosinophilia and Systemic Symptoms (DRESS):** This is a severe hypersensitivity reaction to medication that presents with a widespread, intensely itchy rash accompanied by systemic symptoms like fever and profound fatigue.
+3. **Systemic Lupus Erythematosus (SLE):** This autoimmune condition frequently presents with a combination of systemic fatigue and fever, along with a characteristic ""butterfly"" (malar) rash across the cheeks and bridge of the nose.
+
+***Disclaimer:** I am an AI, not a doctor. These differentials are for informational purposes and do not constitute a medical diagnosis. Please seek immediate medical attention for an evaluation and proper testing.*"
+"I've been feeling really sick for the past few days. I have a high fever, chills, and intense itching. I've also been vomiting and sweating a lot. I have a headache and my muscles are aching. I feel really miserable.",malaria,"Based on the systemic symptoms provided—specifically the combination of high fever, chills, severe muscle aches, and the distinct mention of intense itching—here are the top three differential diagnoses:
+
+**1. Dengue Fever**
+This is a primary consideration because it typically presents with high fever, severe headache, and intense muscle and joint pain (often called ""breakbone fever""), as well as vomiting; notably, it is frequently associated with a maculopapular rash that can be intensely pruritic (itchy).
+
+**2. Malaria**
+The classic ""malarial paroxysm"" consists of the high fever, shaking chills, and profuse sweating described, accompanied by non-specific systemic symptoms like headache, vomiting, and myalgia.
+
+**3. Leptospirosis**
+This bacterial infection matches the high fever, chills, severe headache, and vomiting, and is particularly known for causing intense muscle aches (myalgia), especially in the calves and lower back.
+
+***Disclaimer:** I am an AI, not a doctor. These differentials are for informational purposes and should not be used as a substitute for professional medical advice, diagnosis, or treatment. Please seek immediate medical attention, as several of these conditions can be serious if left untreated.*"
+"I have a lot of heartburn and indigestion, especially after I eat spicy or fatty foods. When I lie down or bend over, my chest discomfort gets worse. My chest hurts a lot.",gastroesophageal reflux disease,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Gastroesophageal Reflux Disease (GERD):** This is the most likely diagnosis as the patient reports classic heartburn and indigestion triggered by spicy/fatty foods, which is further exacerbated by lying down or bending over (positions that allow stomach acid to flow back into the esophagus).
+
+2. **Peptic Ulcer Disease (PUD):** The reports of indigestion and significant chest/epigastric pain triggered by certain foods are consistent with an ulcer in the stomach or duodenum.
+
+3. **Acute Coronary Syndrome (ACS):** While the dietary and positional triggers strongly suggest a gastrointestinal cause, any patient reporting that their ""chest hurts a lot"" must be evaluated for cardiac ischemia, as myocardial infarction can often mimic the sensation of severe indigestion or heartburn."
+"I've been having a hard time going to the bathroom, and my stomach has been hurting. I also had a fever last night.",typhoid,"Based on the symptoms of abdominal pain, difficulty with bowel movements, and fever, here are the top three differential diagnoses:
+
+1. **Appendicitis**: This is a primary concern because the inflammation of the appendix often causes abdominal pain and fever, and can lead to a temporary cessation of bowel movements (ileus).
+2. **Diverticulitis**: This involves inflammation or infection of small pouches in the colon, which typically presents with localized abdominal pain (often on the left side), fever, and changes in bowel habits.
+3. **Bowel Obstruction**: A blockage in the intestines prevents the passage of stool and gas, causing significant abdominal pain and bloating; the presence of a fever suggests a possible complication such as ischemia or perforation.
+
+***Disclaimer:** I am an AI, not a doctor. These symptoms—especially the combination of fever and inability to pass stool—can indicate a medical emergency. Please seek immediate medical attention or go to an urgent care/emergency room for a physical examination and diagnostic imaging.*"
+"I have a sour taste in my mouth, even when I haven't eaten anything acidic. I also get hiccups and a feeling of a lump in my throat.",gastroesophageal reflux disease,"Based on the symptoms described, here are the top three differential diagnoses:
+
+1. **Gastroesophageal Reflux Disease (GERD):** The sour taste is a classic sign of acid regurgitation, while the feeling of a lump in the throat (globus sensation) often occurs when stomach acid irritates the esophageal lining.
+2. **Laryngopharyngeal Reflux (LPR):** Also known as ""silent reflux,"" this occurs when acid reaches the larynx and pharynx, directly causing the globus sensation and a sour or bitter taste in the mouth.
+3. **Hiatal Hernia:** This anatomical displacement of the stomach into the chest cavity can cause severe reflux (sour taste/globus) and is a common trigger for hiccups due to the irritation of the diaphragm."
+I have been feeling really thirsty and have been urinating a lot more than usual. My mouth and throat are always dry. I have also been feeling really hungry and have been eating a lot more than usual.,diabetes,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Diabetes Mellitus (Type 1 or Type 2):** This is the most likely diagnosis as the ""classic triad"" of polyuria (excessive urination), polydipsia (excessive thirst), and polyphagia (excessive hunger) is a hallmark presentation of hyperglycemia.
+2. **Diabetes Insipidus:** This condition matches the symptoms of extreme thirst and frequent urination due to a deficiency in or resistance to antidiuretic hormone (ADH), although it typically does not cause increased hunger.
+3. **Hypercalcemia:** High levels of calcium in the blood can impair the kidneys' ability to concentrate urine, leading to polyuria and compensatory polydipsia (increased thirst)."
+I've been feeling really sick and tired. I've lost weight and have a fever. My urine is dark and my skin is yellow. I've also been having stomach pain.,jaundice,"Based on the symptoms of jaundice (yellow skin and dark urine), fever, weight loss, and abdominal pain, here are the top three differential diagnoses:
+
+1. **Acute Viral Hepatitis**: The combination of fever, fatigue, and jaundice is classic for liver inflammation caused by viruses (such as Hepatitis A, B, or C), which often presents with abdominal discomfort and systemic illness.
+2. **Choledocholithiasis with Ascending Cholangitis**: The presence of ""Charcot's Triad"" (fever, jaundice, and right upper quadrant abdominal pain) strongly suggests a gallstone blocking the common bile duct, leading to a bacterial infection of the biliary tree.
+3. **Pancreatic Cancer**: The significant weight loss combined with obstructive jaundice (yellow skin and dark urine) and stomach pain is highly concerning for a malignancy in the head of the pancreas compressing the bile duct."
+"I have a lot of stomach pain, and it's hard for me to sleep. I also feel really anxious and have no appetite.",peptic ulcer disease,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Generalized Anxiety Disorder (GAD):** The combination of anxiety, insomnia, and stomach pain is a classic presentation of GAD, as chronic stress often manifests physically through the ""gut-brain axis,"" causing gastrointestinal distress and appetite loss.
+2. **Peptic Ulcer Disease (PUD):** This organic cause explains the primary stomach pain and loss of appetite, while the resulting physical discomfort and worry about health can secondary trigger anxiety and difficulty sleeping.
+3. **Major Depressive Disorder (MDD) with Anxious Distress:** Depression frequently presents with ""vegetative"" symptoms, including significant loss of appetite and insomnia, and often includes somatic complaints like stomach pain and comorbid anxiety."
+"My skin has been acting up lately, it's been really itchy and I've been getting rashes. Some patches of my skin are a different color than the rest of my skin, and I have some lumps or bumps on my skin that weren't there before.",fungal infection,"Because the symptoms described—itching, rashes, discoloration, and lumps/bumps—are very broad and can overlap across many different dermatological and systemic conditions, a wide range of possibilities exists. 
+
+Based on the clinical presentation, here are the top three differential diagnoses:
+
+1. **Atopic Dermatitis (Eczema):** This condition is characterized by intense itching and rashes; chronic inflammation and scratching often lead to skin thickening (lichenification), which can feel like lumps or bumps, and post-inflammatory hyperpigmentation or hypopigmentation (color changes).
+2. **Psoriasis:** This typically presents as raised, red plaques with silvery scales (the ""bumps"") that can be itchy and often result in patches of skin that differ in color from the surrounding area.
+3. **Lichen Planus:** This is an inflammatory condition that specifically manifests as itchy, purple-ish, flat-topped bumps (papules) and frequently leaves behind dark, hyperpigmented patches of skin as the lesions evolve.
+
+***Disclaimer:** I am an AI, not a doctor. These differentials are for informational purposes and should not be used as a substitute for a professional medical diagnosis. Please consult a healthcare provider or dermatologist for a physical examination and proper testing.*"
+"I have a burning feeling in my stomach. It's worse when I eat or drink. I also get heartburn, indigestion, and nausea.",peptic ulcer disease,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Gastritis**: The burning sensation in the stomach and nausea, particularly when aggravated by eating or drinking, are classic signs of inflammation of the stomach lining.
+2. **Peptic Ulcer Disease (PUD)**: Specifically a gastric ulcer, which typically presents as a burning epigastric pain that worsens shortly after food intake.
+3. **Gastroesophageal Reflux Disease (GERD)**: The presence of heartburn and indigestion suggests that stomach acid is refluxing into the esophagus, causing a burning sensation in the upper abdomen and chest."
+"I have been experiencing muscle pain and headache. The muscle pain is like a constant ache that is worse when I try to use the affected muscles. I also have small red spots developing on my face, neck and arms.",dengue,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Dermatomyositis**: This inflammatory condition is characterized by the combination of proximal muscle weakness/aching and a distinct skin rash typically found on the face, neck (the ""shawl sign""), and arms.
+2. **Systemic Lupus Erythematosus (SLE)**: This autoimmune disease frequently presents with systemic muscle and joint pain, headaches, and photosensitive red rashes on the face (malar rash) and upper extremities.
+3. **Systemic Viral Infection (e.g., Dengue or Chikungunya)**: Many systemic viral illnesses present with a triad of severe myalgia (muscle pain), headache, and a generalized maculopapular rash (small red spots)."
+"I've been feeling really sick lately. My nose is running like crazy, and I can't stop sneezing. I'm also exhausted and have a fever.",common cold,"Based on the symptoms of runny nose, sneezing, exhaustion, and fever, here are the top three differential diagnoses:
+
+1. **Influenza (The Flu):** The presence of a fever and significant exhaustion combined with respiratory symptoms is highly characteristic of the flu.
+2. **COVID-19:** Many current variants present with a combination of systemic symptoms (fever, fatigue) and upper respiratory issues like sneezing and rhinorrhea.
+3. **Common Cold (Viral Rhinitis):** While fever is less common and typically milder in adults with a cold, the prominent sneezing and runny nose are classic hallmarks of this infection."
+I have been having cramps in my calves when I walk or stand for long periods of time. I have also noticed bruise marks on my calves. I feel tired very soon.,varicose veins,"***Disclaimer:** I am an AI, not a doctor. These differentials are for informational purposes and should be discussed with a healthcare provider for an accurate diagnosis.*
+
+Based on the symptoms of exertional calf cramping, skin discoloration (""bruise marks""), and systemic fatigue, here are the top three differential diagnoses:
+
+### 1. Peripheral Artery Disease (PAD)
+The calf cramps experienced specifically while walking or standing are a hallmark sign of **intermittent claudication**, which occurs when narrowed arteries reduce blood flow to the leg muscles during activity. The feeling of getting tired quickly (muscle fatigue) is due to the lack of oxygenated blood reaching the tissues.
+
+### 2. Chronic Venous Insufficiency (CVI)
+Cramping and heaviness that worsen after standing for long periods are characteristic of venous pooling. The ""bruise marks"" you mentioned may actually be **hemosiderin staining**, a common feature of CVI where red blood cells leak into the skin and leave a brownish, bruise-like discoloration.
+
+### 3. Anemia
+Systemic fatigue is a primary symptom of anemia. Depending on the type (such as iron deficiency or B12 deficiency), you may experience muscle cramps due to poor oxygen transport to the muscles and increased capillary fragility or clotting issues that can lead to easy bruising on the lower extremities."
+"I've been feeling really run down and achy, and I can't stop coughing. It hurts in my chest when I do, and my heart feels like it's racing. I've been coughing up a lot of gross, brown mucus.",pneumonia,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Community-Acquired Pneumonia**: The combination of a productive cough with brown (rusty) mucus, pleuritic chest pain, and systemic symptoms like malaise and tachycardia is highly characteristic of a bacterial lung infection.
+2. **Acute Bronchitis**: This involves inflammation of the bronchial tubes, which causes a persistent productive cough and general fatigue, although the brown discoloration of the mucus is more typical of pneumonia.
+3. **Influenza (Flu)**: The ""run down"" and ""achy"" feeling (myalgias) combined with a cough and racing heart (often due to fever) are classic for the flu, which can also predispose a patient to secondary bacterial pneumonia."
+I've been feeling really sick and tired. I've lost weight and have a fever. My urine is dark and my skin is yellow. I also have stomach pain.,jaundice,"Based on the symptoms provided—specifically the combination of jaundice (yellow skin), dark urine, fever, weight loss, and abdominal pain—the clinical picture suggests a hepatobiliary or pancreatic issue.
+
+Here are the top 3 differential diagnoses:
+
+1. **Acute Hepatitis (Viral or Drug-Induced):** This matches the presentation of fever, profound fatigue, and jaundice, as inflammation of the liver prevents the proper processing of bilirubin, leading to yellow skin and dark urine.
+2. **Pancreatic Cancer (Head of Pancreas):** This is strongly suggested by the combination of significant weight loss and ""painless"" or dull stomach pain accompanying obstructive jaundice (yellow skin and dark urine) caused by the tumor compressing the common bile duct.
+3. **Acute Cholangitis:** This matches the classic ""Charcot’s Triad"" (fever, jaundice, and right upper quadrant abdominal pain), which occurs when a bile duct obstruction (such as a gallstone) leads to a bacterial infection.
+
+***Disclaimer:** I am an AI, not a doctor. These possibilities are for informational purposes and should be evaluated by a healthcare professional immediately, as some of these conditions can be medical emergencies.*"
+I've been experiencing stiffness and weakness in my neck muscles recently. My joints have grown stiff and it's hard for me to run without getting stiff. Walking is also very uncomfortable.,arthritis,"Based on the symptoms of proximal muscle weakness (neck), systemic joint stiffness, and impaired mobility (walking and running), here are the top three differential diagnoses:
+
+1. **Polymyalgia Rheumatica (PMR):** This condition typically presents with profound stiffness and aching in the neck, shoulders, and pelvic girdle, which directly explains the difficulty walking and the stiffness in the neck.
+2. **Rheumatoid Arthritis (RA):** This systemic inflammatory disease causes symmetrical joint stiffness and pain; it frequently affects the small joints of the hands and feet (impairing walking) and can involve the cervical spine (causing neck stiffness).
+3. **Dermatomyositis/Polymyositis:** These inflammatory myopathies cause symmetric proximal muscle weakness, which would manifest as weakness in the neck muscles and difficulty with activities that require leg strength, such as running and walking."
+"I've been having trouble breathing lately. I've been coughing a lot, and my chest feels tight. I've also been feeling very tired and weak.",bronchial asthma,"Based on the symptoms of dyspnea (difficulty breathing), cough, chest tightness, and systemic fatigue, here are the top three differential diagnoses:
+
+1. **Chronic Obstructive Pulmonary Disease (COPD) or Asthma**: These conditions typically present with a combination of cough, chest tightness, and shortness of breath due to airway inflammation and obstruction.
+2. **Community-Acquired Pneumonia**: An infection in the lungs often causes a persistent cough and difficulty breathing, while the body's immune response to the infection leads to significant fatigue and weakness.
+3. **Congestive Heart Failure (CHF)**: Fluid backup in the lungs (pulmonary edema) can cause shortness of breath, a cough, and a feeling of chest pressure, while decreased cardiac output results in profound tiredness and muscle weakness."
+I have a sour taste in my mouth. I burp and belch a lot. I have a feeling of pressure or fullness in my upper belly.,peptic ulcer disease,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Gastroesophageal Reflux Disease (GERD):** The sour taste in the mouth is a classic sign of acid regurgitation, and frequent belching often occurs as a result of swallowing air while trying to clear the esophagus.
+2. **Gastritis:** Inflammation of the stomach lining frequently causes a sensation of pressure, bloating, or fullness in the upper abdomen (dyspepsia) and can lead to increased belching.
+3. **Functional Dyspepsia:** This condition is characterized by chronic upper abdominal fullness and belching without an obvious structural cause, often mirroring the symptoms of an ulcer or gastritis."
+"I have a rash on my face and sores near my nose. The sores are red, painful, and have a yellow ooze.",impetigo,"Based on the symptoms described, here are the top three differential diagnoses:
+
+1. **Impetigo**: The ""yellow ooze"" (often described as honey-colored crusting) is a hallmark sign of this bacterial skin infection, which commonly affects the area around the nose and mouth.
+2. **Herpes Simplex (Cold Sores)**: The location on the face and the description of painful, red sores are characteristic of HSV-1, particularly if the blisters have ruptured and begun to crust over.
+3. **Periorificial Dermatitis**: This condition presents as a red, bumpy rash around the nose and mouth; while typically less ""oozy,"" it can become painful and develop crusting if a secondary bacterial infection occurs.
+
+***Disclaimer:** I am an AI, not a doctor. These possibilities are for informational purposes and do not constitute a medical diagnosis. Please consult a healthcare provider for a physical examination and appropriate treatment.*"
+I have a sour taste in my mouth and I've been belching a lot. My upper abdomen feels full and pressed in.,peptic ulcer disease,"Based on the symptoms described, here are the top three differential diagnoses:
+
+1. **Gastroesophageal Reflux Disease (GERD):** The sour taste in the mouth is a classic sign of acid regurgitation, and frequent belching often accompanies the reflux of gastric contents into the esophagus.
+2. **Gastritis:** Inflammation of the stomach lining frequently causes a feeling of fullness, pressure, or bloating in the upper abdomen (dyspepsia), which can also trigger increased belching.
+3. **Functional Dyspepsia:** This condition is characterized by chronic upper abdominal discomfort and a sensation of fullness or ""pressure"" after eating, often paired with belching, without an obvious structural cause."
+"I've been having trouble seeing things clearly, and it seems to be getting worse. I'm also really tired all the time, and I sometimes feel lightheaded and dizzy.",diabetes,"Based on the combination of worsening visual disturbances, systemic fatigue, and dizziness, here are the top three differential diagnoses:
+
+1. **Diabetes Mellitus**
+High blood glucose levels can cause the lens of the eye to swell, leading to blurred vision, while the body's inability to efficiently use glucose for energy results in profound fatigue and lightheadedness.
+
+2. **Anemia**
+A deficiency in red blood cells or hemoglobin reduces oxygen delivery to the brain and tissues, which typically manifests as chronic fatigue, dizziness, and lightheadedness, and in severe cases, can impair visual acuity.
+
+3. **Multiple Sclerosis (MS)**
+This neurological condition can cause optic neuritis (leading to blurred vision) and affect the vestibular system or brainstem (causing dizziness), while systemic fatigue is one of the most common hallmark symptoms of the disease."
+"I have a rash on my legs that is red, inflamed, and itchy. It is spreading and causing a lot of discomfort.",varicose veins,"Since no image was provided, my assessment is based solely on your description of a red, inflamed, itchy, and spreading rash on the legs.
+
+Here are the top three differential diagnoses:
+
+1. **Contact Dermatitis**: This occurs when the skin reacts to an allergen or irritant (such as poison ivy, a new laundry detergent, or a lotion), which typically presents as an intensely itchy, red, and inflamed rash that spreads across the area of contact.
+2. **Atopic Dermatitis (Eczema)**: This is a chronic inflammatory condition characterized by patches of red, itchy skin that can flare up and spread, often triggered by environmental factors or skin dryness.
+3. **Tinea Corporis (Fungal Infection/Ringworm)**: Fungal infections on the legs often begin as red, itchy, inflamed patches that spread outward in a circular pattern as the fungus grows.
+
+***Disclaimer:** I am an AI, not a doctor. Please consult a healthcare professional for an accurate diagnosis and treatment plan, especially if you develop a fever, blisters, or signs of a severe allergic reaction.*"
+"I've been feeling really run down lately, and I just can't seem to shake this cold. My nose is always running, and I'm coughing up all this gunk. My throat is sore, and I've got a headache. I'm also feeling really tired and achy.",common cold,"Based on the symptoms described, here are the top three differential diagnoses:
+
+1. **Influenza (The Flu):** The combination of systemic symptoms—such as significant fatigue, muscle aches, and headache—alongside respiratory issues like a cough and sore throat is highly characteristic of the flu.
+2. **COVID-19:** This virus presents with a wide overlap of symptoms including cough, sore throat, fatigue, and body aches, making it clinically difficult to distinguish from a cold or flu without testing.
+3. **Common Cold (Viral Upper Respiratory Infection):** The presence of a runny nose and sore throat combined with a cough is the classic presentation of a cold, although the ""achy"" feeling and extreme tiredness are typically less severe than in the flu."
+I have a rash all over my body and I feel really itchy. I'm also feeling really tired and I don't have an appetite.,chicken pox,"Because the symptoms are generalized (affecting the whole body) and accompanied by systemic signs (fatigue and loss of appetite), the differential diagnosis focuses on conditions that have both cutaneous and systemic involvement.
+
+Here are the top three differential diagnoses:
+
+1. **Drug Reaction with Eosinophilia and Systemic Symptoms (DRESS Syndrome):** This matches the widespread, itchy rash combined with ""flu-like"" systemic symptoms such as profound fatigue and loss of appetite, often triggered by a new medication.
+2. **Systemic Lupus Erythematosus (SLE):** This matches the presentation of generalized skin manifestations paired with significant constitutional symptoms, including exhaustion and anorexia, characteristic of an autoimmune flare.
+3. **Viral Exanthem:** This matches the combination of a diffuse rash and a systemic viral prodrome, where fatigue and decreased appetite often precede or accompany the eruption of the skin."
+"I have red, itchy bumps all over my body. They're especially bad on my arms and legs. I also have a headache and a fever. I don't feel like eating anything and have lost my appetite.",chicken pox,"Based on the combination of systemic symptoms (fever, headache, loss of appetite) and dermatological findings (widespread itchy bumps), here are the top three differential diagnoses:
+
+1. **Viral Exanthem (e.g., Varicella/Chickenpox):** The presence of a widespread, pruritic (itchy) rash accompanying a prodrome of fever, headache, and malaise is classic for many viral infections.
+2. **Drug Hypersensitivity Reaction (Drug Eruption):** A systemic allergic reaction to a medication can manifest as widespread itchy bumps (urticaria or morbilliform rash) often accompanied by systemic ""flu-like"" symptoms such as fever and loss of appetite.
+3. **Arboviral Infection (e.g., Dengue Fever):** These infections are characterized by a high fever and severe headache (often retro-orbital) followed by a generalized rash, along with significant systemic fatigue and anorexia.
+
+***Disclaimer:** I am an AI, not a doctor. These possibilities are for informational purposes and do not constitute a medical diagnosis. Please seek immediate medical attention for a physical examination and proper testing.*"
+I have a lot of burping and belching. I get chest discomfort that goes up my neck and into my jaw and arm. I have pressure and tension in my chest.,gastroesophageal reflux disease,"***Disclaimer:** I am an AI, not a doctor. The symptoms you are describing—specifically chest pressure radiating to the neck, jaw, and arm—are classic red flags for a medical emergency. **Please seek immediate emergency medical attention or call emergency services (e.g., 911) now.***
+
+Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Acute Coronary Syndrome (ACS) / Myocardial Infarction:** The combination of chest pressure and tension radiating into the neck, jaw, and arm is a hallmark presentation of a heart attack, where the heart muscle is not receiving enough oxygen.
+2. **Gastroesophageal Reflux Disease (GERD):** Frequent burping and belching combined with chest discomfort (heartburn) can mimic cardiac pain, as stomach acid irritating the esophagus can cause a burning sensation that radiates upward.
+3. **Panic Disorder / Anxiety Attack:** Severe anxiety can cause chest tightness and pressure, and hyperventilation often leads to aerophagia (swallowing air), which results in increased burping and belching."
+I've been having a lot of pain in my neck and back. I also feel dizzy and weak.,cervical spondylosis,"Because the combination of spinal pain (neck and back) and neurological symptoms (dizziness and weakness) can indicate several different systems—including degenerative, autoimmune, or nutritional—the differentials range from localized spinal issues to systemic conditions.
+
+Here are the top three differential diagnoses:
+
+1. **Cervical Spondylotic Myelopathy (CSM):** Degenerative changes in the cervical spine can compress the spinal cord, leading to neck pain and weakness in the limbs, while the compression or associated vestibular dysfunction can cause dizziness.
+2. **Multiple Sclerosis (MS):** As an autoimmune demyelinating disease of the central nervous system, MS can cause inflammation in the spinal cord (causing pain and weakness) and in the brainstem or cerebellum (causing dizziness/vertigo).
+3. **Vitamin B12 Deficiency (Subacute Combined Degeneration):** A severe deficiency in B12 leads to the degeneration of the posterior and lateral columns of the spinal cord, which presents as muscle weakness, spinal discomfort, and ataxia (which patients often describe as dizziness or imbalance)."
+I've been feeling really thirsty and hungry lately. I also get really tired sometimes.,diabetes,"Based on the symptoms of polydipsia (excessive thirst), polyphagia (excessive hunger), and fatigue, here are the top three differential diagnoses:
+
+1. **Diabetes Mellitus (Type 1 or Type 2):** This is the most likely diagnosis as the ""three Ps"" (polydipsia, polyphagia, and polyuria) are hallmark signs; fatigue occurs because glucose remains in the bloodstream instead of entering the cells to provide energy.
+2. **Hyperthyroidism:** An overactive thyroid accelerates the body's metabolism, which can lead to an increased appetite and significant exhaustion or fatigue.
+3. **Diabetes Insipidus:** While primarily characterized by extreme thirst and excessive urination (polydipsia), the resulting dehydration can lead to profound fatigue."
+"I've been having trouble breathing, coughing a lot, and feeling exhausted. I have a fever and have been coughing up a lot of thick, sticky mucus. I'm just so tired and worn out from dealing with this.",bronchial asthma,"Based on the symptoms described, here are the top three differential diagnoses:
+
+1. **Community-Acquired Pneumonia**: The combination of fever, shortness of breath, and a productive cough with thick mucus is highly characteristic of an infection in the lung parenchyma.
+2. **Acute Bronchitis**: This condition typically presents with a persistent cough producing mucus and systemic fatigue, often following a viral upper respiratory infection.
+3. **COVID-19 or Influenza**: These systemic viral infections frequently cause high fever, profound exhaustion (""worn out"" feeling), and progressive difficulty breathing."
+"I've been feeling really hot and sweaty, and I've been throwing up. I've also been having chills, and my skin is really itchy. I've been having a headache, and I've been feeling really nauseous and achy.",malaria,"Based on the symptoms provided, here are the top three differential diagnoses. No image was provided for this case.
+
+**1. Acute Hepatitis**
+The combination of systemic ""flu-like"" symptoms (fever, chills, headache, and myalgia) paired with gastrointestinal distress (nausea and vomiting) and specifically itchy skin (pruritus caused by the buildup of bile salts) is highly characteristic of liver inflammation.
+
+**2. Dengue Fever**
+This condition is known for causing high fever, chills, and severe muscle and joint aches (often called ""breakbone fever""), along with headache and nausea, and frequently presents with a characteristic pruritic (itchy) rash.
+
+**3. Influenza (Flu)**
+The fever, chills, severe body aches, headache, and nausea/vomiting are classic markers of a systemic viral infection like influenza, although the itchy skin is less common and would potentially suggest a secondary reaction or a different viral strain."
+"I've had a high fever, especially at night. It's been really bad. I've also had a headache, constipation, and diarrhea. I don't want to eat anything.",typhoid,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Typhoid Fever (Enteric Fever):** This is a primary consideration because the combination of high fever, severe headache, anorexia, and the specific alternation between constipation and diarrhea is a classic clinical presentation of this systemic infection.
+2. **Malaria:** High fevers (often occurring in cycles or peaking at night), intense headaches, and gastrointestinal distress (including diarrhea) are hallmark signs of a malaria infection.
+3. **Abdominal Tuberculosis:** The emphasis on nocturnal fever (night sweats), profound loss of appetite, and changes in bowel habits (constipation and diarrhea) is highly characteristic of extrapulmonary tuberculosis affecting the gastrointestinal tract."
+"I have been having migraines for a few days. I have distorted eyesight, excessive appetite, a painful neck, melancholy, irritability, acid reflux, indigestion, and regular headaches.",migraine,"***Disclaimer:** I am an AI, not a doctor. These differentials are for informational purposes and should be discussed with a healthcare provider for an accurate diagnosis.*
+
+Based on the combination of neurological, psychological, and gastrointestinal symptoms, here are the top three differential diagnoses:
+
+**1. Pituitary Adenoma**
+A growth on the pituitary gland can compress the optic chiasm, leading to distorted eyesight and chronic headaches, while simultaneously disrupting hormone production, which can cause excessive appetite (hyperphagia), mood instability (melancholy/irritability), and metabolic changes.
+
+**2. Generalized Anxiety Disorder (GAD) with Somatization**
+Chronic anxiety often manifests physically (somatization) as tension-type headaches and a painful neck, while the emotional components lead to irritability and melancholy; furthermore, anxiety frequently triggers gastrointestinal distress such as acid reflux and indigestion, and can lead to ""stress eating"" (excessive appetite).
+
+**3. Migraine with Aura (Complex Migraine)**
+The distorted eyesight and intense headaches are classic indicators of migraine with aura, while the painful neck and irritability are common prodromal or concurrent symptoms; additionally, the ""migraine phase"" can fluctuate appetite (cravings) and is frequently associated with gastric stasis or dysfunction (indigestion and reflux)."
+"I've been having trouble breathing, and I've been coughing a lot. I've also been running a fever, and I'm feeling really tired. I'm not sure what's going on, but I'm worried.",bronchial asthma,"Based on the symptoms of fever, cough, difficulty breathing, and fatigue, here are the top three differential diagnoses:
+
+1. **Pneumonia**: The combination of fever, cough, and shortness of breath is a classic presentation of an infection in the lung parenchyma.
+2. **COVID-19**: These systemic and respiratory symptoms are hallmark signs of a SARS-CoV-2 infection, which often presents with fatigue and respiratory distress.
+3. **Influenza (The Flu)**: High fever, profound fatigue, and cough are characteristic of the flu, which can progress to cause difficulty breathing if it leads to secondary complications."
+I have been having a stomach ache for the past week. It is not getting better even with medication. I feel like vomiting and I can't eat anything. I have become very weak.,typhoid,"Based on the symptoms of persistent abdominal pain, nausea, inability to tolerate oral intake, and subsequent weakness, here are the top three differential diagnoses:
+
+1. **Peptic Ulcer Disease (PUD):** The persistent stomach ache and nausea are characteristic of an ulcer in the stomach or duodenum, and the inability to eat can occur if the ulcer causes swelling or bleeding, leading to systemic weakness.
+2. **Cholecystitis (Gallbladder Inflammation):** This often presents as persistent upper abdominal pain and vomiting that does not respond to standard antacids or over-the-counter medications.
+3. **Acute or Subacute Pancreatitis:** The combination of severe abdominal pain and a complete inability to tolerate food or liquids (leading to rapid weakness) is highly suggestive of pancreatic inflammation.
+
+***Disclaimer:** I am an AI, not a doctor. These possibilities are for informational purposes and do not constitute a medical diagnosis. Because you are experiencing an inability to eat and significant weakness, you should seek medical attention immediately to prevent dehydration and malnutrition.*"
+I have a lot of heartburn and acid reflux. I also have a sore throat and bad breath. I throw up a lot.,gastroesophageal reflux disease,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Gastroesophageal Reflux Disease (GERD):** The classic presentation of heartburn and acid reflux occurs when stomach acid flows back into the esophagus, which can further irritate the throat (causing soreness) and contribute to bad breath.
+2. **Laryngopharyngeal Reflux (LPR):** Also known as ""silent reflux,"" this occurs when acid reaches the larynx and pharynx, specifically explaining the sore throat and halitosis (bad breath) even if typical heartburn is intermittent.
+3. **Gastroparesis:** The report of ""throwing up a lot"" combined with reflux suggests delayed gastric emptying, where food remains in the stomach too long, leading to frequent vomiting and the backup of acid into the throat."
+I have varicose veins in my legs. They are swollen and the blood vessels are more visible than usual. The swelling seems to be getting worse over time.,varicose veins,"Based on the symptoms described, here are the top three differential diagnoses:
+
+1. **Chronic Venous Insufficiency (CVI)**
+This is the most likely diagnosis, as the failure of venous valves leads to blood pooling in the lower extremities, which directly causes the dilation of veins (varicosities) and the progressive accumulation of fluid (edema).
+
+2. **Deep Vein Thrombosis (DVT)**
+While often presenting more acutely, a clot in the deep vein system can obstruct blood flow, forcing blood into the superficial veins and causing significant swelling in the affected limb.
+
+3. **Congestive Heart Failure (CHF)**
+Systemic fluid overload and decreased cardiac output can increase venous pressure throughout the body, often manifesting as worsening bilateral leg swelling and more prominent superficial veins."
+"I'm really sick. I have a fever, chills, and a headache. I've been vomiting and sweating a lot. I also have muscle pain and nausea.",malaria,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Influenza (The Flu):** The combination of high fever, chills, severe muscle pain (myalgia), and headache is classic for influenza, and nausea or vomiting can occur as systemic symptoms.
+2. **Viral Gastroenteritis:** The prominent nausea and vomiting, paired with fever and muscle aches, are highly suggestive of a ""stomach flu"" or gastrointestinal infection.
+3. **Meningitis:** While less common, the ""triad"" of fever, headache, and vomiting is a red flag for meningitis and requires immediate medical evaluation to rule out inflammation of the membranes covering the brain and spinal cord.
+
+***Disclaimer:** I am an AI, not a doctor. These possibilities are for informational purposes only. Because symptoms like severe headache and vomiting combined with fever can indicate a medical emergency, please seek immediate medical attention or visit an urgent care center.*"
+I've been feeling sick for a few days. I have a sore throat and my nose is running. I've also been having trouble swallowing.,allergy,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Viral Pharyngitis (Common Cold):** The combination of a sore throat and a runny nose is highly characteristic of a viral upper respiratory infection.
+2. **Streptococcal Pharyngitis (Strep Throat):** The sore throat and difficulty swallowing are classic indicators of a bacterial infection of the pharynx.
+3. **Infectious Mononucleosis:** This condition often presents with severe inflammation of the tonsils and pharynx, which can make swallowing difficult."
+"I'm dizzy, nauseated, and shaky. My throat is swollen, so I'm having trouble breathing. Sometimes, throughout the night, my chest hurts and I feel sick.",allergy,"***Disclaimer: I am an AI, not a doctor. The symptoms you are describing—particularly difficulty breathing and chest pain—can indicate a life-threatening medical emergency. Please seek immediate emergency medical attention (call 911 or go to the nearest Emergency Room).***
+
+Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Anaphylaxis**
+The combination of a swollen throat, difficulty breathing, dizziness, and nausea is highly characteristic of a severe systemic allergic reaction, where airway obstruction and a drop in blood pressure (shock) lead to dizziness and shakiness.
+
+2. **Panic Attack / Severe Anxiety**
+Panic attacks frequently manifest as ""globus sensation"" (the feeling of throat swelling or choking), chest pain, and shakiness, often accompanied by hyperventilation which causes dizziness and nausea.
+
+3. **Acute Coronary Syndrome (e.g., Myocardial Infarction)**
+Chest pain, nausea, and dizziness are classic ""red flag"" symptoms of a cardiac event; while a swollen throat is less common, the sensation of shortness of breath (dyspnea) is often described by patients as a feeling of constriction or inability to get air through the throat."
+"I have been feeling nauseous and have a constant urge to vomit, which is accompanied with mild fever and headache. I also feel very weak and tired. ",dengue,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Viral Gastroenteritis**: The combination of nausea, a constant urge to vomit, and a mild fever is highly characteristic of a ""stomach flu"" or gastrointestinal infection.
+2. **Influenza (Flu)**: The presence of fever, headache, and profound weakness/tiredness are classic systemic symptoms of the flu, which can sometimes be accompanied by gastrointestinal distress.
+3. **Meningitis**: While less common, the triad of fever, headache, and nausea/vomiting is a critical clinical red flag for meningitis and requires urgent medical evaluation to rule out inflammation of the membranes covering the brain and spinal cord.
+
+***Disclaimer:** I am an AI, not a doctor. These are possibilities for educational purposes. If you are experiencing a stiff neck, confusion, or a high fever, please seek emergency medical attention immediately.*"
+"I have been having headaches for a while now. They are very painful and last for a long time. I also get nausea, vomiting, and sensitivity to light and sound.",migraine,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Migraine**: This is the most likely diagnosis, as the combination of severe, long-lasting pain accompanied by nausea, vomiting, photophobia (light sensitivity), and phonophobia (sound sensitivity) is a classic clinical presentation.
+2. **Tension-type Headache**: While these are common and can last for long periods, they are typically less severe and usually lack the associated nausea, vomiting, and strong sensory sensitivities.
+3. **Cluster Headache**: These are characterized by extreme, ""boring"" pain, though they typically occur in shorter, more frequent bursts and are usually accompanied by autonomic symptoms (like eye watering or nasal congestion) rather than nausea and vomiting."
+I have been experiencing a high fever for the past few days. I also feel weak and my muscles pain. I cannot work all day because of this.,dengue,"Based on the symptoms of high fever, generalized weakness, and muscle pain (myalgia) that are severe enough to interfere with daily activities, here are the top three differential diagnoses:
+
+1. **Influenza (The Flu):** This is a primary consideration because the sudden onset of high fever, significant muscle aches, and profound fatigue are hallmark symptoms of the influenza virus.
+2. **COVID-19:** This remains a top differential as it frequently presents with a systemic ""flu-like"" prodrome, including high fever, myalgia, and exhaustion.
+3. **Dengue Fever:** Especially if the patient is in or has traveled to a tropical region, this is a strong possibility due to the characteristic high fever and severe muscle/joint pain (often referred to as ""breakbone fever"") that leads to significant functional impairment.
+
+*(Note: No image was provided for this case; therefore, clinical reasoning is based solely on the reported symptoms.)*"
+I have a rash on my nose that is red and itchy. It feels like it is burning. I think it might be an infection.,impetigo,"Based on the symptoms of redness, itching, and burning on the nose, here are the top three differential diagnoses:
+
+1. **Seborrheic Dermatitis**: This is common in the folds of the nose and typically presents as red, itchy patches that may have a greasy or flaky appearance.
+2. **Rosacea**: This condition frequently affects the nose (central facial redness) and is often characterized by a burning or stinging sensation rather than just itching.
+3. **Contact Dermatitis**: This occurs if the skin reacts to an external irritant or allergen (such as a new skincare product or nasal spray), resulting in a red, itchy, and burning rash.
+
+***Disclaimer:** I am an AI, not a doctor. These possibilities are for informational purposes and do not constitute a medical diagnosis. Please consult a healthcare provider for a physical examination and definitive diagnosis.*"
+"I've been having a lot of stomach pain and bloating, and I've been constipated. I also have a high fever and chills.",typhoid,"Based on the combination of gastrointestinal distress (pain, bloating, constipation) and systemic signs of infection (high fever, chills), here are the top three differential diagnoses:
+
+1. **Acute Appendicitis**: This can present with abdominal pain and bloating, and as the inflammation progresses or if the appendix ruptures, it often leads to a high fever and chills.
+2. **Acute Diverticulitis**: Inflammation or infection of diverticula in the colon commonly causes localized stomach pain and constipation, while the associated infection triggers systemic symptoms like fever and chills.
+3. **Small Bowel Obstruction (SBO) with Ischemia or Perforation**: The blockage explains the bloating and constipation, while the development of high fever and chills suggests a severe complication, such as tissue death (ischemia) or a perforation leading to peritonitis.
+
+***Disclaimer:** I am an AI, not a doctor. These symptoms, particularly a high fever combined with abdominal pain and constipation, can indicate a medical emergency. Please seek immediate medical attention or go to the nearest emergency room.*"
+I'm having trouble breathing and have a fever. I'm sweating a lot and feel really tired and cold. My heart is racing and I'm coughing up some brown mucus.,pneumonia,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Community-Acquired Pneumonia**: The combination of fever, difficulty breathing, and tachycardia is classic for pneumonia, and ""brown"" or rusty-colored sputum is a hallmark sign of certain bacterial infections (such as *Streptococcus pneumoniae*).
+2. **Influenza with Secondary Bacterial Pneumonia**: The systemic symptoms (high fever, extreme fatigue, chills, and sweating) suggest a primary viral infection like the flu, while the progression to brown mucus and shortness of breath suggests a secondary bacterial complication.
+3. **Pulmonary Tuberculosis (TB)**: The presence of fever, significant fatigue, and heavy sweating (which may represent night sweats) combined with a productive cough is highly suggestive of TB."
+"I've been having back pain, a persistent cough, and weakness in my limbs. I also have problems with vertigo and losing my balance, and my neck hurts.",cervical spondylosis,"Based on the combination of pulmonary symptoms (persistent cough) and multifocal neurological symptoms (neck/back pain, limb weakness, and vertigo), the differential diagnosis focuses on systemic diseases that can affect both the lungs and the central nervous system.
+
+**1. Metastatic Lung Cancer**
+The persistent cough suggests a primary malignancy in the lungs, while the neck/back pain, limb weakness, and vertigo are highly indicative of metastatic spread to the spine (spinal cord compression) and the brain (cerebellum or brainstem).
+
+**2. Tuberculosis (Pulmonary and Spinal/Pott's Disease)**
+A persistent cough is a classic sign of pulmonary TB, and the spread of the infection to the vertebrae (Pott's disease) would explain the neck and back pain as well as the limb weakness due to cord compression; vertigo could suggest concomitant TB meningitis.
+
+**3. Neurosarcoidosis**
+Sarcoidosis frequently presents with pulmonary involvement causing a persistent cough, and the systemic inflammatory granulomas can infiltrate the CNS and spinal cord, leading to vertigo, balance issues, and myelopathy (causing neck/back pain and weakness)."
+I have a sore on my nose that has crusted over and is hard to touch. It used to leak a yellow-rust colored fluid and it is taking a lot longer to deal with using medication.,impetigo,"***Disclaimer:** I am an AI, not a doctor. The following information is for educational purposes and should not be taken as a medical diagnosis. Please consult a healthcare provider or dermatologist for a physical examination and biopsy if necessary.*
+
+Based on the symptoms described—specifically the location on the nose, the firmness (induration), the specific color of the exudate, and the fact that it is non-responsive to medication—here are the top three differential diagnoses:
+
+### 1. Basal Cell Carcinoma (BCC)
+This is the most common form of skin cancer and frequently appears on the nose due to sun exposure. It often presents as a non-healing sore that may crust, bleed, and then appear to ""heal"" slightly before returning, and the lesion often feels firm to the touch.
+
+### 2. Squamous Cell Carcinoma (SCC)
+SCC is another common skin cancer that frequently manifests as a firm, red nodule or a flat lesion with a scaly or crusted surface. The ""hard"" texture you described and the failure to respond to standard medications are significant red flags for SCC, which can be more aggressive than BCC.
+
+### 3. Impetigo
+The ""yellow-rust colored fluid"" is a classic description of the ""honey-colored crusts"" associated with this bacterial skin infection. While typically easier to treat with antibiotics, a lack of response to medication could suggest a resistant strain of bacteria or that the infection is secondary to an underlying lesion (like the cancers mentioned above)."
+I have been urinating blood. I sometimes feel sick to my stomach when I urinate. I often feel like I have a fever.,urinary tract infection,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Pyelonephritis (Kidney Infection):** The combination of hematuria (blood in urine), fever, and systemic symptoms like nausea strongly suggests an upper urinary tract infection that has reached the kidneys.
+2. **Nephrolithiasis (Kidney Stones):** Kidney stones frequently cause hematuria, and the severe pain associated with them often triggers nausea; the presence of a fever would indicate a concurrent infection (infected hydronephrosis).
+3. **Acute Glomerulonephritis:** This inflammation of the kidney's filtering units can cause blood in the urine and may be accompanied by systemic symptoms, including fever and malaise, depending on the underlying cause.
+
+***Disclaimer:** I am an AI, not a doctor. These possibilities are for informational purposes and do not constitute a medical diagnosis. Please seek immediate medical attention, as blood in the urine combined with fever can indicate a serious infection.*"
+"I have been having back pain, a cough that won't go away, and weakness in my arms and legs. My neck hurts and I have been dizzy and have trouble keeping my balance.",cervical spondylosis,"Based on the constellation of respiratory symptoms (persistent cough) and multi-level neurological deficits (neck/back pain, tetraparesis, and ataxia), the primary clinical concern is a systemic process that has affected both the lungs and the spinal cord.
+
+Here are the top three differential diagnoses:
+
+1. **Metastatic Lung Cancer with Spinal Cord Compression**: A primary malignancy in the lungs would explain the persistent cough, while metastases to the cervical and thoracic spine would cause the neck and back pain and compress the spinal cord, leading to weakness in all four limbs and balance issues.
+2. **Pott's Disease (Tuberculous Spondylitis)**: Pulmonary tuberculosis causes the chronic cough, and the hematogenous spread of *Mycobacterium tuberculosis* to the spine causes vertebral destruction and inflammation, which results in localized pain and neurological impairment due to cord compression.
+3. **Neurosarcoidosis with Pulmonary Sarcoidosis**: Sarcoidosis commonly affects the lungs, causing a persistent cough, while the systemic granulomatous inflammation can infiltrate the central nervous system or spinal cord, resulting in motor weakness and ataxia."
+"I've been feeling really unwell and have been scratching a lot. I have a high fever, chills, nausea, and muscle pain. I've also been sweating a lot.",malaria,"Based on the systemic symptoms (high fever, chills, muscle pain, and nausea) combined with the presence of pruritus (itching), here are the top three differential diagnoses:
+
+1. **Leptospirosis (specifically Weil's Disease):** The high fever, chills, and severe muscle pain are classic for this zoonotic infection, and the itching suggests the progression to liver dysfunction and jaundice.
+2. **Yellow Fever:** This viral infection presents with high fever, chills, and muscle pain, and the itching is caused by hepatic involvement and subsequent jaundice.
+3. **DRESS Syndrome (Drug Reaction with Eosinophilia and Systemic Symptoms):** This is a severe drug reaction that causes high fever, muscle pain, and organ inflammation, typically accompanied by an intensely itchy skin rash."
+I have been having pain in my joints and I have noticed that my skin is peeling in different places. I am worried that something is wrong with me.,psoriasis,"Based on the symptoms of joint pain and skin peeling, here are the top three differential diagnoses:
+
+1. **Psoriatic Arthritis**: This condition is characterized by the combination of inflammatory arthritis and psoriasis, where the skin develops thick, scaly plaques that can peel or flake.
+2. **Systemic Lupus Erythematosus (SLE)**: As a multisystem autoimmune disease, lupus frequently causes joint inflammation and various skin rashes that may lead to scaling or peeling.
+3. **Reactive Arthritis**: This typically occurs after an infection and can present with joint pain along with a specific skin condition called keratoderma blennorrhagica, which causes scaly, peeling lesions on the palms and soles."
+I have been feeling very sick. I have been vomiting and have a high fever. My skin has turned yellow and my urine is dark. I have also been experiencing abdominal pain.,jaundice,"Based on the symptoms provided—specifically the combination of fever, jaundice (yellow skin), dark urine, and abdominal pain—here are the top three differential diagnoses:
+
+1. **Acute Cholangitis**
+The combination of fever, jaundice, and abdominal pain is known as Charcot's Triad, which is highly characteristic of this bacterial infection of the bile duct, usually caused by an obstruction.
+
+2. **Acute Hepatitis**
+Whether caused by a virus (e.g., Hepatitis A or B), toxins, or alcohol, inflammation of the liver parenchyma often leads to systemic symptoms like fever and vomiting, as well as jaundice and dark urine due to the liver's inability to process bilirubin.
+
+3. **Choledocholithiasis with Cholecystitis**
+A gallstone blocking the common bile duct (choledocholithiasis) causes obstructive jaundice and dark urine, while the accompanying inflammation of the gallbladder (cholecystitis) accounts for the high fever, vomiting, and abdominal pain."
+"I have pain in my stomach that is worse when I hunch down or lie down. I have pain after eating certain foods, like hot or acidic food. I sometimes have loose stools because of this.",peptic ulcer disease,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Gastroesophageal Reflux Disease (GERD):** The pain worsening when lying down is a classic sign of acid reflux, as gravity no longer keeps stomach acid down, and acidic foods are common triggers for esophageal irritation.
+2. **Peptic Ulcer Disease (PUD):** Pain triggered by acidic foods suggests an irritation of a gastric or duodenal ulcer, and positional changes (like hunching or lying down) can shift stomach contents and acid against the ulcerated tissue.
+3. **Gastritis:** Inflammation of the stomach lining is often exacerbated by acidic or ""hot"" (spicy) foods, and the resulting digestive upset can lead to changes in bowel habits, such as loose stools."
+"I have a burning feeling in my throat after I eat. I also sometimes get a bitter or sour taste in my mouth, which makes me feel sick.",gastroesophageal reflux disease,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Gastroesophageal Reflux Disease (GERD):** The burning sensation after eating (heartburn) and the sour taste in the mouth (acid regurgitation) are classic hallmarks of gastric acid escaping into the esophagus.
+2. **Laryngopharyngeal Reflux (LPR):** Also known as ""silent reflux,"" this is suggested by the burning feeling specifically in the throat, indicating that refluxate is reaching the larynx and pharynx.
+3. **Bile Reflux:** While acid is sour, the specific mention of a ""bitter"" taste often indicates that bile (a digestive fluid from the liver) is refluxing from the duodenum into the stomach and esophagus."
+I have some veins in my legs that are bulging out. I'm concerned about it. I'm also overweight and I think that might be the cause.,varicose veins,"Based on the symptoms described, here are the top three differential diagnoses:
+
+1. **Varicose Veins**: This is the most likely diagnosis, as the primary symptom is the visible bulging and twisting of veins, which occurs when valves in the veins fail and is strongly associated with increased pressure on the legs due to being overweight.
+2. **Chronic Venous Insufficiency (CVI)**: This is a broader condition where the veins have trouble sending blood from the limbs back to the heart; the bulging veins are a classic clinical sign of the underlying valve dysfunction often exacerbated by obesity.
+3. **Deep Vein Thrombosis (DVT)**: While DVT typically presents with swelling, pain, and warmth rather than just bulging, it is a critical differential to consider in overweight patients with leg vein changes, as a clot in the deep veins can lead to secondary changes in the superficial veins."
+I'm having trouble breathing and I'm sweating a lot. I feel really sick and I have a lot of mucus in my throat. My chest hurts and my heart is racing. I'm coughing up a lot of dark mucus that looks like rust.,pneumonia,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Pneumococcal Pneumonia**: The presence of ""rust-colored"" sputum is a classic hallmark of *Streptococcus pneumoniae*, which also explains the difficulty breathing, chest pain, and systemic illness.
+2. **Myocardial Infarction (Heart Attack)**: The combination of chest pain, racing heart (tachycardia), and profuse sweating (diaphoresis) are critical warning signs of a cardiac event.
+3. **Pulmonary Embolism**: Acute shortness of breath, chest pain, and tachycardia are characteristic of a blood clot in the lung, and the ""dark mucus"" may represent hemoptysis (coughing up blood) associated with lung infarction.
+
+***Disclaimer:** I am an AI, not a doctor. These symptoms—especially chest pain, difficulty breathing, and tachycardia—can indicate a life-threatening emergency. Please seek immediate medical attention or call emergency services (such as 911) right away.*"
+"I was working out and suddenly felt a headache, chest pain, and dizziness. I have been having trouble keeping my balance since then.",hypertension,"Given the sudden onset of symptoms during physical exertion and the combination of cardiovascular (chest pain) and neurological (headache, balance issues, dizziness) signs, this is a high-acuity presentation.
+
+Here are the top 3 differential diagnoses:
+
+1. **Aortic Dissection (Type A):** This is a critical consideration because a tear in the aorta can cause sudden chest pain, and if the dissection extends into the carotid arteries, it can restrict blood flow to the brain, leading to a stroke, headache, and balance instability.
+2. **Subarachnoid Hemorrhage (SAH):** Sudden, severe headaches (often described as a ""thunderclap"") are frequently triggered by exertion or exercise; the resulting increase in intracranial pressure can cause dizziness and ataxia (trouble keeping balance).
+3. **Acute Ischemic Stroke (Posterior Circulation):** A stroke affecting the cerebellum or brainstem would directly cause dizziness and loss of balance; the accompanying chest pain could indicate a concurrent cardiac event (such as a myocardial infarction) that may have triggered an embolic stroke.
+
+***Disclaimer:** I am an AI, not a doctor. These symptoms—particularly the combination of chest pain and neurological deficits—constitute a medical emergency. Please seek immediate emergency medical attention (call 911 or go to the nearest ER).*"
+"I've been feeling really sick. I've had a fever, lost weight, and I've been really tired. My skin and my urine have turned yellow. I've also been having stomach pain.",jaundice,"Based on the combination of jaundice (yellow skin and urine), systemic symptoms (fever, weight loss, fatigue), and abdominal pain, here are the top three differential diagnoses:
+
+1. **Pancreatic Cancer**: The combination of significant weight loss and obstructive jaundice is a classic red flag for a malignancy in the head of the pancreas compressing the bile duct.
+2. **Viral Hepatitis**: Fever, profound fatigue, and jaundice are hallmark signs of acute inflammation of the liver, often accompanied by pain in the upper right quadrant of the abdomen.
+3. **Ascending Cholangitis**: This is a serious bacterial infection of the bile ducts characterized by ""Charcot's triad"": fever, jaundice, and abdominal pain."
+"I have small dents in my nails. My joints are hurting a lot. I have a silver like dusting on my skin, especially on my back.",psoriasis,"Based on the combination of skin, nail, and joint symptoms, here are the top three differential diagnoses:
+
+1. **Psoriatic Arthritis**: This is the most likely diagnosis as it perfectly explains the ""classic triad"" of silvery skin plaques (psoriasis), nail pitting (small dents), and inflammatory joint pain.
+2. **Reactive Arthritis**: This condition can cause significant joint pain and skin lesions known as *keratoderma blennorrhagica*, which can appear as scaly or pustular plaques.
+3. **Systemic Lupus Erythematosus (SLE)**: While the ""silvery"" description is more characteristic of psoriasis, SLE is a systemic autoimmune disease that frequently causes joint pain and a variety of skin rashes."
+I have severe nausea and chest discomfort. I have been having chest discomfort lately. I often shiver a lot and feel really nervous. I have been taking a new medication for my high blood pressure.,drug reaction,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Myocardial Infarction (Heart Attack)**
+Severe nausea and chest discomfort are classic warning signs of a cardiac event; the shivering and nervousness may represent a sympathetic ""fight or flight"" response or a sense of impending doom often associated with acute coronary syndrome.
+
+2. **Panic Attack / Severe Anxiety Disorder**
+The constellation of chest discomfort, nervousness, shivering (trembling), and nausea is highly characteristic of a panic attack, where physical symptoms mimic cardiac distress.
+
+3. **Adverse Drug Reaction (Antihypertensive Medication)**
+Because these symptoms coincided with a new blood pressure medication, this could be a drug-induced reaction; certain medications can cause paradoxical anxiety, tachycardia, or electrolyte imbalances that lead to shivering and chest discomfort.
+
+***Disclaimer:** I am an AI, not a doctor. These symptoms—particularly chest discomfort and nausea—can indicate a medical emergency. Please seek immediate medical attention or call emergency services (such as 911) right away.*"
+"I've been having back pain, a cough, and numbness in my arms and legs. My neck hurts too, and I've been feeling dizzy and off balance.",cervical spondylosis,"Because the symptoms involve both the respiratory system (cough) and the central nervous system (neck/back pain, four-limb numbness, and imbalance), the differential diagnoses must consider both structural spinal issues and systemic diseases.
+
+Here are the top 3 differential diagnoses:
+
+1. **Cervical Spondylotic Myelopathy (CSM)**
+The combination of neck pain, numbness in all four extremities, and imbalance (ataxia) is a classic presentation of spinal cord compression in the neck due to degenerative changes. (The cough may be an unrelated concurrent illness or may be exacerbating the pain through increased intra-abdominal pressure).
+
+2. **Multiple Sclerosis (MS)**
+MS causes demyelination in the central nervous system, which can lead to ""disseminated"" symptoms such as numbness in different limbs, dizziness/vertigo, and coordination issues due to lesions in the brain or spinal cord.
+
+3. **Neurosarcoidosis**
+This is a unifying diagnosis that explains both the pulmonary and neurological symptoms; sarcoidosis commonly causes a persistent cough (pulmonary involvement) and can cause inflammation in the brain or spinal cord, leading to numbness, neck pain, and balance problems."
+I have a rash on my legs that is getting worse. I have difficulty running.,varicose veins,"Since no image was provided, I am basing these differentials solely on the combination of a worsening leg rash and functional impairment (difficulty running).
+
+**1. Dermatomyositis**
+This condition is characterized by a distinctive skin rash and proximal muscle weakness, which would directly explain the difficulty in running.
+
+**2. Vasculitis (e.g., Leukocytoclastic Vasculitis)**
+Vasculitis often presents as palpable purpura (a purple-red rash) on the lower extremities and can cause systemic inflammation, joint pain, or muscle involvement that impairs physical activity.
+
+**3. Cellulitis**
+This is a bacterial skin infection that causes redness, warmth, and swelling; if severe or bilateral, the associated pain and inflammation can make running or walking very difficult."
+I have been having a lot of pain in my back and neck. I also have a cough that won't go away and I feel weak and dizzy.,cervical spondylosis,"Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **COVID-19 or Severe Influenza**: These viral infections commonly present with a persistent cough and profound systemic fatigue (weakness/dizziness), often accompanied by widespread myalgia (muscle aches) affecting the back and neck.
+2. **Tuberculosis (TB)**: A chronic cough and systemic weakness are hallmark signs of TB, and the back and neck pain could indicate the spread of the infection to the spine (Pott's disease).
+3. **Pneumonia with Sepsis**: A persistent cough indicates a lower respiratory infection, while the dizziness and weakness suggest a systemic inflammatory response (sepsis) that can lead to generalized body aches and hypotension."
+I have a rash on my arms and neck that itches like crazy. I've been feeling really uncomfortable all day.,chicken pox,"Based on the symptoms of an intensely itchy rash located on the arms and neck, here are the top three differential diagnoses:
+
+1. **Contact Dermatitis**: This is highly likely because the arms and neck are common sites for exposure to external allergens or irritants (such as new soaps, fragrances, or plants like poison ivy) that cause an acute, itchy inflammatory response.
+2. **Urticaria (Hives)**: This matches the description of ""itching like crazy"" and can appear suddenly on the extremities and neck as a reaction to an allergen, medication, or environmental trigger.
+3. **Atopic Dermatitis (Eczema flare)**: This is a strong possibility as it typically presents with severe pruritus and commonly affects the neck and the creases of the arms, though it is often associated with a history of sensitive skin.
+
+***Disclaimer:** I am an AI, not a doctor. Please consult a healthcare provider for an accurate diagnosis and treatment plan.*"
+I've been feeling hot and feverish for a few days now. I also have a rash all over my body that itches like crazy.,chicken pox,"Based on the symptoms of fever and a generalized, intensely pruritic (itchy) rash, here are the top three differential diagnoses:
+
+1. **Drug Hypersensitivity Reaction (Morbilliform Drug Eruption):** This is a common cause of a widespread, itchy rash accompanied by systemic symptoms like fever, typically occurring after starting a new medication.
+2. **Viral Exanthem:** Many viral infections present with a ""prodrome"" of fever and malaise followed by a generalized skin eruption that can be itchy.
+3. **Acute Urticaria (Hives):** While fever is less common, a systemic allergic reaction or a viral-induced hive outbreak would explain the ""crazy"" itching and the widespread nature of the rash.
+
+***Disclaimer:** I am an AI, not a doctor. These differentials are for informational purposes and do not constitute a medical diagnosis. Please consult a healthcare provider for a physical examination and definitive diagnosis.*"
+I have been having rashes on my skin for a while now. They are not healing and are getting worse. I have also noticed that the skin on my elbows and knees is peeling. I am worried about this and would like to see a doctor.,psoriasis,"Based on the symptoms described, here are the top three differential diagnoses:
+
+1. **Psoriasis (specifically Plaque Psoriasis):** This is the most likely diagnosis because the classic presentation involves thick, red patches of skin covered with silvery scales (peeling) specifically located on the extensor surfaces, such as the elbows and knees.
+
+2. **Atopic Dermatitis (Eczema):** While more commonly found in the creases of the elbows and knees (flexural surfaces), chronic eczema can cause widespread inflammation, intense itching, and peeling skin that resists simple healing.
+
+3. **Contact Dermatitis:** This occurs when the skin reacts to an irritant or allergen; because the elbows and knees are high-friction areas that frequently come into contact with various surfaces and materials, they can develop chronic, peeling rashes.
+
+***Disclaimer:** I am an AI, not a doctor. These possibilities are for informational purposes only. Please consult a healthcare provider for a physical examination and an accurate diagnosis.*"
+I have rashes on my skin that flake off and make me prone to infection. My fingers twitch and I sometimes shake.,drug reaction,"Since no image was provided, I am basing these differentials solely on the reported symptoms of desquamating (flaking) skin with increased infection risk and neurological tremors/twitching.
+
+Here are the top 3 differential diagnoses:
+
+1. **Arsenic Poisoning**
+   Chronic exposure to arsenic is classic for causing ""rain-drop"" pigmentation and hyperkeratosis (thickening and flaking of the skin), and it frequently leads to peripheral neuropathy which manifests as twitching, numbness, and tremors.
+
+2. **Pellagra (Severe Niacin/Vitamin B3 Deficiency)**
+   This condition is characterized by the ""3 Ds"": Dermatitis (a symmetric, scaling, and flaking rash that becomes prone to infection), Diarrhea, and Dementia (which includes neurological dysfunction such as tremors and irritability).
+
+3. **Liver Failure (with Hepatic Encephalopathy)**
+   Chronic liver failure can cause severe skin changes and pruritus (itching) that leads to skin breakdown and secondary infections, while the accumulation of toxins in the brain causes ""asterixis,"" a characteristic flapping tremor of the hands and fingers."
+"I have a lot of belching and burping. I also have chest pain that goes to my back, neck, and arm. I feel pressure and stress in my chest.",gastroesophageal reflux disease,"***Disclaimer:** I am an AI, not a doctor. Chest pain radiating to the arm, neck, and back can be a sign of a life-threatening emergency. If you are currently experiencing these symptoms, please stop reading and call emergency services (such as 911) or go to the nearest emergency room immediately.*
+
+Based on the symptoms provided, here are the top three differential diagnoses:
+
+1. **Acute Coronary Syndrome (ACS) / Myocardial Infarction:** The combination of chest pressure and pain radiating to the neck, arm, and back is a classic presentation of a heart attack.
+2. **Gastroesophageal Reflux Disease (GERD):** The presence of frequent belching and burping, paired with chest discomfort (heartburn), often mimics cardiac pain due to the proximity of the esophagus to the heart.
+3. **Aortic Dissection:** The specific description of chest pain that radiates through to the back is a primary red flag for a tear in the wall of the aorta."
