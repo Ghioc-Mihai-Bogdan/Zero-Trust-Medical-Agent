@@ -48,3 +48,12 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install docker.io git curl unzip -y
 sudo systemctl enable --now docker
 sudo usermod -aG docker $USER
+
+ ```
+##Demo on EOSC
+[![EOSC VM Instantiation Demo](https://youtu.be/sYSketeMuwE/maxresdefault.jpg)](https://youtu.be/sYSketeMuwE)
+
+
+
+
+
