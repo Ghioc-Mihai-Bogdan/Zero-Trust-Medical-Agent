@@ -51,8 +51,8 @@ sudo usermod -aG docker $USER
 
  ```
 ##Demo on EOSC
-[![EOSC VM Instantiation Demo](https://youtu.be/sYSketeMuwE/maxresdefault.jpg)](https://youtu.be/sYSketeMuwE)
-.
+[![EOSC VM Instantiation Demo](https://img.youtube.com/vi/sYSketeMuwE/maxresdefault.jpg)](https://youtu.be/sYSketeMuwE)
+
 
 
 
